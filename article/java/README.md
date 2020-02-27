@@ -30,6 +30,7 @@
 - [3.4 jvm监控](3.4_jvm监控.md)
 - [3.5 内存分配与回收策略](3.5_内存分配与回收策略.md)
 - [3.6 双亲委派](3.6_双亲委派.md)
+- [3.7 聊聊jvm的PermGen与Metaspace](3.7_聊聊jvm的PermGen与Metaspace.md)
 
 ## 多线程
 
