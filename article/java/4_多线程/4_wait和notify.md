@@ -1,6 +1,17 @@
 # wait和notify
 
-1. wait()、notify/notifyAll() 方法是Object的本地final方法，无法被重写。
+<!-- TOC -->
+
+- [wait和notify](#wait和notify)
+    - [总结](#总结)
+    - [wait没有获取锁的情况](#wait没有获取锁的情况)
+    - [notify没有获取锁的情况](#notify没有获取锁的情况)
+
+<!-- /TOC -->
+
+## 总结
+
+1. **`wait()`、`notify/notifyAll()` 方法是Object的本地final方法，无法被重写。**
 2. wait()使当前线程阻塞，前提是 必须先获得锁，一般配合synchronized 关键字使用，即，一般在synchronized 同步代码块里使用 wait()、notify/notifyAll() 方法。
 3. 由于 wait()、notify/notifyAll() 在synchronized 代码块执行，说明当前线程一定是获取了锁的。
 
@@ -19,3 +30,80 @@ notify方法只唤醒一个等待（对象的）线程并使该线程开始执�
 7. 在多线程中要测试某个条件的变化，使用if 还是while？
 
 　　要注意，notify唤醒沉睡的线程后，线程会接着上次的执行继续往下执行。所以在进行条件判断时候，可以先把 wait 语句忽略不计来进行考虑，显然，要确保程序一定要执行，并且要保证程序直到满足一定的条件再执行，要使用while来执行，以确保条件满足和一定执行。如下代码：
+
+``` java
+public class K {
+  //状态锁
+  private Object lock;
+  //条件变量
+  private int now,need;
+  public void produce(int num){
+    //同步
+    synchronized (lock){
+      //当前有的不满足需要，进行等待
+      while(now < need){
+        try {
+          //等待阻塞
+          wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+        System.out.println("我被唤醒了！");
+      }
+      // 做其他的事情
+    }
+  }
+}
+````
+
+显然，只有当前值满足需要值的时候，线程才可以往下执行，所以，必须使用while 循环阻塞。注意，wait() 当被唤醒时候，只是让while循环继续往下走.如果此处用if的话，意味着if继续往下走，会跳出if语句块。但是，notifyAll 只是负责唤醒线程，并不保证条件云云，所以需要手动来保证程序的逻辑。
+
+
+## wait没有获取锁的情况
+
+``` java
+public class BB {
+    private void bb() {
+        try {
+            this.wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("bbbb");
+    }
+
+    public static void main(String[] args) {
+        new BB().bb();
+    }
+}
+```
+异常：非法监视器状态异常
+```
+Exception in thread "main" java.lang.IllegalMonitorStateException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at com.shigeqiu.demo.BB.bb(BB.java:10)
+	at com.shigeqiu.demo.BB.main(BB.java:19)
+```
+
+## notify没有获取锁的情况
+
+``` java
+public class BB {
+    private void bb() {
+        this.notify();
+        System.out.println("bbbb");
+    }
+
+    public static void main(String[] args) {
+        new BB().bb();
+    }
+}
+```
+异常：非法监视器状态异常
+```
+Exception in thread "main" java.lang.IllegalMonitorStateException
+	at java.lang.Object.notify(Native Method)
+	at com.shigeqiu.demo.BB.bb(BB.java:9)
+	at com.shigeqiu.demo.BB.main(BB.java:14)
+```

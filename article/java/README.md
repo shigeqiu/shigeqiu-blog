@@ -34,10 +34,10 @@
 
 ## 多线程
 
-- [4.1 多线程](4_多线程/1_多线程.md)
+- [4.1 基础问答](4_多线程/1_基础问答.md)
 - [4.2 线程状态](4_多线程/2_线程状态.md)
 - [4.3 线程池](4_多线程/3_线程池.md)
-- [4.4 wait和notify](4_多线程/4_wait和notify.md)
+- [4.4 `wait` 和 `notify`](4_多线程/4_wait和notify.md)
 - [4.5 ReentrantLock](4_多线程/5_ReentrantLock.md)
 - [4.6 ReentrantReadWriteLock](4_多线程/6_ReentrantReadWriteLock.md)
 - [4.7 CountDownLatch](4_多线程/7_CountDownLatch.md)
@@ -45,16 +45,18 @@
 - [4.9 Semaphore](4_多线程/9_Semaphore.md)
 - [4.10 Exchanger](4_多线程/10_exchanger.md)
 - [4.11 Unsafe与CAS.md](4_多线程/11_Unsafe与CAS.md)
+- [4.12 Synchronized和Static Synchronized区别](4_多线程/12_Synchronized和StaticSynchronized区别)
+- [4.13 Thread类中的方法](4_多线程/13_Thread类中的方法.md)
 
 ## 集合
 
 - [5.1 HashMap源码解析](5.1_HashMap源码解析.md)
-- [5.1 TreeMap](5.1_TreeMap.md)
-- [5.2 ArrayList](5.2_ArrayList.md)
-- [5.3 LinkedList](5.3_LinkedList.md)
-- 5.3 Vector
-- 5.3 HashSet
-- 5.3 LinkedHashSet
+- TreeMap
+- ArrayList
+- LinkedList
+- Vector
+- HashSet
+- LinkedHashSet
 - CopyOnWriteArrayList
 
 

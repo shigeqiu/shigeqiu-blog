@@ -1,122 +1,21 @@
-# 多线程
+# Thread类中的方法
 
 <!-- TOC -->
 
-- [多线程](#多线程)
-    - [实现方式](#实现方式)
-    - [区别Thread的run与start](#区别thread的run与start)
-    - [带返回值](#带返回值)
-    - [同步工具类](#同步工具类)
-    - [Synchronized和Static Synchronized区别](#synchronized和static-synchronized区别)
-    - [关键方法](#关键方法)
-        - [join()](#join)
-        - [interrupt()](#interrupt)
-        - [setDaemon()](#setdaemon)
-        - [yield()](#yield)
-        - [sleep()](#sleep)
+- [Thread类中的方法](#thread类中的方法)
+    - [实例方法](#实例方法)
+        - [join](#join)
+        - [interrupt](#interrupt)
+        - [setDaemon](#setdaemon)
+    - [静态方法](#静态方法)
+        - [yield](#yield)
+        - [sleep](#sleep)
 
 <!-- /TOC -->
 
-## 实现方式
+## 实例方法
 
-
-- 一种是继承Thread类
-- 另外一种是实现Runable接口。
-- Thread类实际上也是实现了Runnable接口的类。
-
-实现Runnable接口比继承Thread类所具有的优势：
-
-- 1）：适合多个相同的程序代码的线程去处理同一个资源
-- 2）：可以避免java中的单继承的限制
-- 3）：增加程序的健壮性，代码可以被多个线程共享，代码和数据独立
-
-## 区别Thread的run与start
-
-- `start()` 方法来启动线程，真正实现了多线程运行，这时无需等待 `run()`方法体代码执行完毕而直接继续执行下面的代码。通过调用Thread类的 `start()` 方法来启动一个线程，`start()` 方法的调用后并不是立即执行多线程代码，而是使得该线程变为可运行态（Runnable），并没有运行，一旦得到cpu时间片，就开始执行 `run()` 方法， `run()` 方法称为线程体，它包含了要执行的这个线程的内容，Run方法运行结束，此线程随即终止。
-- `run()` 方法只是类的一个普通方法而已，如果直接调用Run方法，程序中依然只有主线程这一个线程，其程序执行路径还是只有一条，还是要顺序执行，还是要等待 `run()`方法体执行完毕后才可继续执行下面的代码，这样就没有达到写线程的目的。
-    
-
-## 带返回值
-
-使用ExecutorService、Callable、Future实现有返回结果的多线程。ExecutorService、Callable、Future这个对象实际上都是属于Executor框架中的功能类。
-
-##  同步工具类
-
-- ReentrantLock（显示锁）
-- ReentrantReadWriteLock（读写锁）
-- Semaphore（信号量）
-- CountDownLatch(闭锁)
-- LimitLatch
-- CyclicBarrier(栅栏)
-- FutureTask
-
-## Synchronized和Static Synchronized区别
-
-synchronized是对类的当前实例进行加锁，防止其他线程同时访问该类的该实例的所有synchronized块，注意这里是“类的当前实例”， 类的两个不同实例就没有这种约束了。
-
-那么static synchronized恰好就是要控制类的所有实例的访问了，static synchronized是限制线程同时访问jvm中该类的所有实例同时访问对应的代码块。
-
-
-一个日本作者-结成浩的《java多线程设计模式》有这样的一个列子：
-
-``` java
-pulbic class Something(){
-    public synchronized void isSyncA(){}
-    public synchronized void isSyncB(){}
-    public static synchronized void cSyncA(){}
-    public static synchronized void cSyncB(){}
-```
-
-那么，加入有Something类的两个实例a与b，那么下列组方法何以被1个以上线程同时访问呢
-
-``` java 
-
-a. x.isSyncA()与x.isSyncB() 
-b. x.isSyncA()与y.isSyncA()
-c. x.cSyncA()与y.cSyncB()
-d. x.isSyncA()与Something.cSyncA()
-```
-
-- a . 都是对同一个实例的synchronized域访问，因此不能被同时访问
-- b . 是针对不同实例的，因此可以同时被访问
-- c . 因为是`static synchronized`，所以不同实例之间仍然会被限制,相当于`Something.isSyncA()` 与 `Something.isSyncB()`了，因此不能被同时访问。
-- d . 可以被同时访问的，理由是synchronzied的是实例方法与synchronzied的类方法由于锁定（lock）不同的原因。
-
-结论：
-
-A: synchronized static是某个类的范围，synchronized static cSync{}防止多个线程同时访问这个 类中的synchronized static 方法。它可以对类的所有对象实例起作用。
-
-B: synchronized 是某实例的范围，synchronized isSync(){}防止多个线程同时访问这个实例中的synchronized 方法。
-
-
-1. 对象锁钥匙只能有一把才能互斥，才能保证共享变量的唯一性
-2. 在静态方法上的锁，和 实例方法上的锁，默认不是同样的，如果同步需要制定两把锁一样。
-3. 关于同一个类的方法上的锁，来自于调用该方法的对象，如果调用该方法的对象是相同的，那么锁必然相同，否则就不相同。比如 `new A().x()` 和 `new A().x()`,对象不同，锁不同，如果A的单利的，就能互斥。
-4. 静态方法加锁，能和所有其他静态方法加锁的 进行互斥。
-5. **静态方法加锁，和xx.class 锁效果一样，直接属于类的。**
-
-## 关键方法
-
-Object 实例方法
-
-- wait()
-- wait()
-- notify()
-- notifyAll()
-
-Thread实例方法
-
-- start()
-- join()
-- interrupt()
-- setDaemon()
-
-Thread 静态方法
-
-- yield()
-- sleep()
-
-### join()
+### join
 
 ``` java
 public class JoinTest {
@@ -196,7 +95,7 @@ public class JoinTest {
 
 从源码中可以看到：join方法的原理就是调用相应线程的wait方法进行等待操作的，例如A线程中调用了B线程的join方法，则相当于在A线程中调用了B线程的wait方法，当B线程执行完（或者到达等待时间），B线程会自动调用自身的notifyAll方法唤醒A线程，从而达到同步的目的。
 
-### interrupt()
+### interrupt
 
 作用是中断本线程，本线程中断自己是被允许的；其它线程调用本线程的interrupt()方法时，会通过checkAccess()检查权限。这有可能抛出SecurityException异常。
 
@@ -208,7 +107,8 @@ public class JoinTest {
 
 中断一个“已终止的线程”不会产生任何操作。
 
-### setDaemon()
+
+### setDaemon
 
 要想设置一个线程为守护线程，setDaemon必须在start前调用。
 
@@ -216,8 +116,9 @@ public class JoinTest {
 
 用户线程不完，jvm系统就不完，要是想只运行"守护Daemon线程",对不起jvm不给面子，不伺候，就关闭了，不给"守护Daemon线程"们单独运行的机会。
 
+## 静态方法
 
-### yield()
+### yield
 
 Java线程中的Thread.yield( )方法，译为线程让步。顾名思义，就是说当一个线程使用了这个方法之后，它就会把自己CPU执行的时间让掉，让自己或者其它的线程运行，注意是让自己或者其他线程运行，并不是单纯的让给其他线程。
 
@@ -231,7 +132,7 @@ yield()的作用是让步。它能让当前线程由“运行状态”进入到�
 
 最终第一个上车的，也有可能是优先级最低的人。并且所谓的优先级执行，是在大量执行次数中才能体现出来的。
 
-### sleep()
+### sleep
 
 - 主要是为了暂停当前线程，把cpu片段让出给其他线程，减缓当前线程的执行。
 - sleep是帮助其他线程获得运行机会的最好方法，但是如果当前线程获取到的有锁，sleep不会让出锁。
