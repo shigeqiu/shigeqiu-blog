@@ -1,0 +1,62 @@
+# Java
+
+## Basic
+
+- [1.1 简单易懂的日志打印](1.1_打印日志.md)
+- [1.2 进制数表示](1.2_进制数表示.md)
+- [1.3 Base64编解码](1.3_base64编解码.md)
+- [1.4 理解`Byte`与`Bit`](1.4_理解Byte与Bit.md)
+- [1.5 访问控制](1.5_访问控制.md)
+- [1.6 `String`字符串](1.6_String字符串.md)
+- [1.7 理解`static`和`final`关键字](1.7_static和final关键字.md)
+- [1.8 Servlet生命周期与线程安全](1.8_Servlet生命周期与线程安全.md)
+- [1.9 常见异常Exception](1.9_Exception.md)
+- [1.10 Object方法](1.10_Object方法.md)
+- [1.11 Integer面试题](1.11_Integer面试题.md)
+- [1.12 try catch finally 执行顺序](1.12_trycatchfinally执行顺序.md)
+- [1.13 swich case 细节](1.13_swich-cash细节.md)
+
+## 俯视 Overlook code
+
+- [2.1 设计模式](2.1_设计模式/README.md)
+- [2.2 单体应用下合理划分](2.2_单体应用下合理划分.md)
+- [2.3 微服务体系服务分层](2.3_微服务体系服务分层.md)
+
+## 理解JVM虚拟机
+
+- [3.1 类加载机制](3.1_类加载机制.md)
+- [3.2 jvm数据区域](3.2_jvm数据区域.md)
+- [3.3 java内存模型](3.3_java内存模型.md)
+- [3.4 jvm监控](3.4_jvm监控.md)
+- [3.5 内存分配与回收策略](3.5_内存分配与回收策略.md)
+- [3.6 双亲委派](3.6_双亲委派.md)
+
+## 多线程
+
+- [4.1 多线程](4_多线程/1_多线程.md)
+- [4.2 线程状态](4_多线程/2_线程状态.md)
+- [4.3 线程池](4_多线程/3_线程池.md)
+- [4.4 wait和notify](4_多线程/4_wait和notify.md)
+- [4.5 ReentrantLock](4_多线程/5_ReentrantLock.md)
+- [4.6 ReentrantReadWriteLock](4_多线程/6_ReentrantReadWriteLock.md)
+- [4.7 CountDownLatch](4_多线程/7_CountDownLatch.md)
+- [4.8 CyclicBarrier](4_多线程/8_CyclicBarrier.md)
+- [4.9 Semaphore](4_多线程/9_Semaphore.md)
+- [4.10 Exchanger](4_多线程/10_exchanger.md)
+- [4.11 Unsafe与CAS.md](4_多线程/11_Unsafe与CAS.md)
+
+## 集合
+
+- [5.1 HashMap源码解析](5.1_HashMap源码解析.md)
+- [5.1 TreeMap](5.1_TreeMap.md)
+- [5.2 ArrayList](5.2_ArrayList.md)
+- [5.3 LinkedList](5.3_LinkedList.md)
+- 5.3 Vector
+- 5.3 HashSet
+- 5.3 LinkedHashSet
+- CopyOnWriteArrayList
+
+
+## java 8 新东西
+
+- Stream
