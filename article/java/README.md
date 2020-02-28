@@ -45,7 +45,7 @@
 - [4.9 Semaphore](4_多线程/9_Semaphore.md)
 - [4.10 Exchanger](4_多线程/10_exchanger.md)
 - [4.11 Unsafe与CAS.md](4_多线程/11_Unsafe与CAS.md)
-- [4.12 Synchronized和Static Synchronized区别](4_多线程/12_Synchronized和StaticSynchronized区别)
+- [4.12 Synchronized和Static Synchronized区别](4_多线程/12_Synchronized和StaticSynchronized区别.md)
 - [4.13 Thread类中的方法](4_多线程/13_Thread类中的方法.md)
 
 ## 集合
@@ -58,7 +58,6 @@
 - HashSet
 - LinkedHashSet
 - CopyOnWriteArrayList
-
 
 ## java 8 新东西
 
