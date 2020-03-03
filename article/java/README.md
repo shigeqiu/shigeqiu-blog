@@ -59,6 +59,6 @@
 - LinkedHashSet
 - CopyOnWriteArrayList
 
-## java 8 新东西
+## java 8 新特性
 
 - Stream
