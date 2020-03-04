@@ -14,7 +14,7 @@
 - [MQ](article/mq/README.md)
 
 
-## 未完善，待更新...
+## 更新中...
 
 - [分布式系统](article/分布式系统/README.md)
 - [Guava](article/guava/README.md)
