@@ -51,8 +51,8 @@
 ## 集合
 
 - [5.1 HashMap源码解析](5.1_HashMap源码解析.md)
+- [5.2 ArrayList](5.2_ArrayList.md)
 - TreeMap
-- ArrayList
 - LinkedList
 - Vector
 - HashSet
