@@ -52,6 +52,7 @@
 
 - [5.1 HashMap源码解析](5.1_HashMap源码解析.md)
 - [5.2 ArrayList](5.2_ArrayList.md)
+- [5.3 Hashtable](5.3_hasetable.md)
 - TreeMap
 - LinkedList
 - Vector
