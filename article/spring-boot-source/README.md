@@ -45,6 +45,6 @@
 
 ## GetBean
 
-- [1. doGetBean](7_getbean/do_get_bean.md)
-- [2. createBean](7_getbean/createBean.md)
-- [3. doCreateBean](7_getbean/do_create_bean.md)
+- [1. doGetBean](7_getbean/1_do_get_bean.md)
+- [2. createBean](7_getbean/2_createBean.md)
+- [3. doCreateBean](7_getbean/3_do_create_bean.md)
