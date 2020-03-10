@@ -16,10 +16,9 @@
 ## Listable
 
 - [1. ConfigurableListableBeanFactory](2_listable/1_ConfigurableListableBeanFactory.md)
-- [2. ConfigurableListableBeanFactory介绍](2_listable/2_ConfigurableListableBeanFactory介绍.md)
-- [3. DefaultListableBeanFactory](2_listable/3_DefaultListableBeanFactory.md)
+- [2. DefaultListableBeanFactory](2_listable/2_DefaultListableBeanFactory.md)
 
-## [PostProcessorRegistrationDelegate](4_PostProcessorRegistrationDelegate)
+## [PostProcessorRegistrationDelegate](4_PostProcessorRegistrationDelegate/README.md)
 
 - [1. invokeBeanFactoryPostProcessors方法](4_PostProcessorRegistrationDelegate/1_invokeBeanFactoryPostProcessors方法.md)
 - [2. registerBeanPostProcessors方法](4_PostProcessorRegistrationDelegate/2_registerBeanPostProcessors方法.md)
