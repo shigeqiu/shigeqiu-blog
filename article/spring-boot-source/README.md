@@ -31,9 +31,9 @@
 
 ## Post Processor
 
-- [1. BeanFactoryPostProcessor](1_BeanFactoryPostProcessor.md)
-- [2. BeanPostProcessor](2_BeanPostProcessor.md)
-- [3. ConditionEvaluator](4_ConditionEvaluator.md)
+- [1. BeanFactoryPostProcessor](6_post-processor/1_BeanFactoryPostProcessor.md)
+- [2. BeanPostProcessor](6_post-processor/2_BeanPostProcessor.md)
+- [3. ConditionEvaluator](6_post-processor/3_ConditionEvaluator.md)
 
 ## ConfigurationClassPostProcessor
 

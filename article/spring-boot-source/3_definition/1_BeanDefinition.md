@@ -3,12 +3,12 @@
 <!-- TOC -->
 
 - [BeanDefinition](#beandefinition)
-    - [uml](#uml)
-    - [translate](#translate)
-    - [AttributeAccessorSupport](#attributeaccessorsupport)
-    - [BeanMetadataAttributeAccessor](#beanmetadataattributeaccessor)
-    - [AbstractBeanDefinition](#abstractbeandefinition)
-    - [RootBeanDefinition](#rootbeandefinition)
+  - [uml](#uml)
+  - [translate](#translate)
+  - [AttributeAccessorSupport](#attributeaccessorsupport)
+  - [BeanMetadataAttributeAccessor](#beanmetadataattributeaccessor)
+  - [AbstractBeanDefinition](#abstractbeandefinition)
+  - [RootBeanDefinition](#rootbeandefinition)
 
 <!-- /TOC -->
 
@@ -50,8 +50,8 @@ private Object source;
 
 以下的内置对象可见性均为**private** **↓↓↓**
 
-| 修饰符 | 类型  | 变量名 | 默认值
----|---|---|---|---
+ 修饰符 | 类型  | 变量名 | 默认值
+---|---|---|---
  volatile | Object | beanClass | 
 | | String |  scope | SCOPE_DEFAULT
 |  | boolean | abstractFlag | false
