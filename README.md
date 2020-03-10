@@ -16,7 +16,7 @@
 
 ## 更新中...
 
-- [分布式系统](article/分布式系统/README.md)
+- [架构](article/架构/README.md)
 - [Guava](article/guava/README.md)
 - [Redis](article/redis/README.md)
 - [算法](article/算法/README.md)
