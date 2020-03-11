@@ -50,14 +50,12 @@
 
 ## 集合
 
-- [5.1 HashMap源码解析](5.1_HashMap源码解析.md)
-- [5.2 ArrayList](5.2_ArrayList.md)
+- [5.1 HashMap](5.1_HashMap.md)
+- [5.2 ArrayList与LinkedList](5.2_ArrayList与LinkedList.md)
 - [5.3 Hashtable](5.3_hashtable.md)
 - TreeMap
-- LinkedList
 - Vector
-- HashSet
-- LinkedHashSet
+- LinkedHashSet、LinkedHashMap
 - CopyOnWriteArrayList
 
 ## java 8 新特性
