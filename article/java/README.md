@@ -37,16 +37,21 @@
 - [4.1 基础问答](4_多线程/1_基础问答.md)
 - [4.2 线程状态](4_多线程/2_线程状态.md)
 - [4.3 线程池](4_多线程/3_线程池.md)
-- [4.4 `wait` 和 `notify`](4_多线程/4_wait和notify.md)
-- [4.5 ReentrantLock](4_多线程/5_ReentrantLock.md)
-- [4.6 ReentrantReadWriteLock](4_多线程/6_ReentrantReadWriteLock.md)
-- [4.7 CountDownLatch](4_多线程/7_CountDownLatch.md)
-- [4.8 CyclicBarrier](4_多线程/8_CyclicBarrier.md)
-- [4.9 Semaphore](4_多线程/9_Semaphore.md)
-- [4.10 Exchanger](4_多线程/10_exchanger.md)
-- [4.11 Unsafe与CAS.md](4_多线程/11_Unsafe与CAS.md)
-- [4.12 Synchronized和Static Synchronized区别](4_多线程/12_Synchronized和StaticSynchronized区别.md)
-- [4.13 Thread类中的方法](4_多线程/13_Thread类中的方法.md)
+- [4.4 Thread类中的方法](4_多线程/4_Thread类中的方法.md)
+- [4.5 `wait` 和 `notify`](4_多线程/5_wait和notify.md)
+- [4.6 Synchronized和Static Synchronized区别](4_多线程/6_Synchronized和StaticSynchronized区别.md)
+- [4.7 wait和notify执行顺序](4_多线程/7_wait和notify执行顺序.md)
+- [4.8 面试题 顺序输出ABC](4_多线程/8_面试题顺序输出ABC.md)
+
+## AQS 机制
+
+- [1 Unsafe与CAS.md](5_AQS/1_Unsafe与CAS.md)
+- [2 ReentrantLock](5_AQS/2_ReentrantLock.md)
+- [3 ReentrantReadWriteLock](5_AQS/3_ReentrantReadWriteLock.md)
+- [4 CountDownLatch](5_AQS/4_CountDownLatch.md)
+- [5 CyclicBarrier](5_AQS/5_CyclicBarrier.md)
+- [6 Semaphore](5_AQS/6_Semaphore.md)
+- [7 Exchanger](5_AQS/7_exchanger.md)
 
 ## 集合
 
