@@ -23,6 +23,7 @@
 - [3.1 spring-cloud概念](3.1_spring-cloud概念.md)
 - [3.2 spring-cloud-config](3.2_spring-cloud-config.md)
 - [3.3 依赖](3.3_依赖.md)
+- [3.4 Ribbon](3.4_spring-cloud-ribbon.md)
 
 ## Spring 事务源码
 
