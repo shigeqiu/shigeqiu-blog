@@ -14,16 +14,17 @@
 
 ## Spring Boot
 
-- [2.1 Spring Boot概念](2.1_spring-boot概念.md)
+- [2.1 Spring Boot 基础](2.1_spring-boot.md)
 - [2.2 Spring Boot源码maven结构](2.2_spring-boot源码maven结构.md)
 - [2.3 Spring管理MyBatis事务的保证数据库连接唯一的原理](2.3_spring管理mybatis事务的保证数据库连接唯一的原理.md)
 
 ## Spring Cloud
 
-- [3.1 Spring Cloud概念](3.1_spring-cloud概念.md)
+- [3.1 Spring Cloud基础](3.1_spring-cloud.md)
 - [3.2 Spring Cloud Config](3.2_spring-cloud-config.md)
-- [3.3 依赖](3.3_依赖.md)
+- [3.3 Eureka](3.3_eureka.md)
 - [3.4 Ribbon](3.4_spring-cloud-ribbon.md)
+- [3.5 Hystrix](3.5_hystrix.md)
 
 ## Spring 事务源码
 
