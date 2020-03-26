@@ -23,8 +23,9 @@
 - [3.1 Spring Cloud基础](3.1_spring-cloud.md)
 - [3.2 Spring Cloud Config](3.2_spring-cloud-config.md)
 - [3.3 Eureka](3.3_eureka.md)
-- [3.4 Ribbon](3.4_spring-cloud-ribbon.md)
+- [3.4 Ribbon](3.4_ribbon.md)
 - [3.5 Hystrix](3.5_hystrix.md)
+- [3.5 Feign](3.6_feign.md)
 
 ## Spring 事务源码
 
