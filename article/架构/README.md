@@ -49,6 +49,7 @@
 ## 中间件
 
 - MyCat
+- Sharding JDBC
 
 ## 大数据
 
