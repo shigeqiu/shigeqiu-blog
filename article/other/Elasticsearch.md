@@ -1,5 +1,19 @@
 # Elasticsearch
 
+<!-- TOC -->
+
+- [Elasticsearch](#elasticsearch)
+  - [索引（index）](#%e7%b4%a2%e5%bc%95index)
+  - [类型（type）](#%e7%b1%bb%e5%9e%8btype)
+  - [文档（document）](#%e6%96%87%e6%a1%a3document)
+  - [映射（mapping）](#%e6%98%a0%e5%b0%84mapping)
+  - [字段（field）](#%e5%ad%97%e6%ae%b5field)
+  - [来源字段（source field）](#%e6%9d%a5%e6%ba%90%e5%ad%97%e6%ae%b5source-field)
+  - [分析与分析器](#%e5%88%86%e6%9e%90%e4%b8%8e%e5%88%86%e6%9e%90%e5%99%a8)
+  - [jar客户端](#jar%e5%ae%a2%e6%88%b7%e7%ab%af)
+
+<!-- /TOC -->
+
 - [官方文档](https://www.elastic.co/guide/index.html)
 - [中文版-权威指南](https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
 
@@ -71,3 +85,22 @@ GET /_analyze
 - token 是实际存储到索引中的词条。
 - position 指明词条在原始文本中出现的位置。
 - start_offset 和 end_offset 指明字符在原始字符串中的位置。
+
+
+## jar客户端
+
+``` xml
+<dependency>
+   <groupId>io.searchbox</groupId>
+   <artifactId>jest</artifactId>
+   <version>5.3.3</version>
+</dependency>
+```
+
+``` xml
+<dependency>
+   <groupId>org.elasticsearch</groupId>
+   <artifactId>elasticsearch</artifactId>
+   <version>5.5.3</version>
+</dependency>
+```
