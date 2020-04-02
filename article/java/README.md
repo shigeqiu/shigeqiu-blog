@@ -24,13 +24,13 @@
 
 ## 理解JVM虚拟机
 
-- [3.1 类加载机制](3.1_类加载机制.md)
-- [3.2 jvm数据区域](3.2_jvm数据区域.md)
-- [3.3 java内存模型](3.3_java内存模型.md)
-- [3.4 jvm监控](3.4_jvm监控.md)
-- [3.5 内存分配与回收策略](3.5_内存分配与回收策略.md)
-- [3.6 双亲委派](3.6_双亲委派.md)
-- [3.7 聊聊jvm的PermGen与Metaspace](3.7_聊聊jvm的PermGen与Metaspace.md)
+- [3.1 类加载机制](3_jvm/1_类加载机制.md)
+- [3.2 jvm数据区域](3_jvm/2_jvm数据区域.md)
+- [3.3 java内存模型](3_jvm/3_java内存模型.md)
+- [3.4 jvm监控](3_jvm/4_jvm监控.md)
+- [3.5 内存分配与回收策略](3_jvm/5_内存分配与回收策略.md)
+- [3.6 双亲委派](3_jvm/6_双亲委派.md)
+- [3.7 聊聊jvm的PermGen与Metaspace](3_jvm/7_聊聊jvm的PermGen与Metaspace.md)
 
 ## 多线程
 

@@ -28,7 +28,7 @@ java memory主要分heap memory 和 non-heap memory，其计算公式如下：
 Max memory = [-Xmx] + [-XX:MaxPermSize] + number_of_threads * [-Xss]
 ```
 
-![](../../img/jvm/gc/2.jpg)
+![](img/2.jpg)
 
 - heap结构
 
@@ -67,7 +67,7 @@ of the methods, constant pool, JIT optimizations etc to metaspace
 
 Metaspace与PermGen之间最大的区别在于：Metaspace并不在虚拟机中，而是使用本地内存。
 
-![](../../img/jvm/gc/3.jpg)
+![](img/3.jpg)
 
 如果没有使用 `-XX:MaxMetaspaceSize` 来设置类的元数据的大小，其最大可利用空间是整个系统内存的可用空间。JVM也可以增加本地内存空间来满足类元数据信息的存储。
 但是如果没有设置最大值，则可能存在bug导致Metaspace的空间在不停的扩展，会导致机器的内存不足；进而可能出现swap内存被耗尽；最终导致进程直接被系统直接kill掉。

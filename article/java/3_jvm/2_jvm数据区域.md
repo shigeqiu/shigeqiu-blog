@@ -15,7 +15,7 @@
 
 <!-- /TOC -->
 
-![ae](../../img/java/jvm内存结构.jpg)
+![ae](img/jvm内存结构.jpg)
 
 ## 1. 程序计数器
 
