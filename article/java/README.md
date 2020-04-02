@@ -31,6 +31,7 @@
 - [3.5 内存分配与回收策略](3_jvm/5_内存分配与回收策略.md)
 - [3.6 双亲委派](3_jvm/6_双亲委派.md)
 - [3.7 聊聊jvm的PermGen与Metaspace](3_jvm/7_聊聊jvm的PermGen与Metaspace.md)
+- [3.8 对象结构](3_jvm/8_对象结构.md)
 
 ## 多线程
 

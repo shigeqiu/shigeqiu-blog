@@ -3,28 +3,17 @@
 
 <!-- TOC -->
 
-- [jvm监控](#jvm监控)
-    - [官方文档](#官方文档)
-    - [jps](#jps)
-    - [jmap和jhat](#jmap和jhat)
-    - [jstat](#jstat)
-        - [class](#class)
-        - [compiler](#compiler)
-        - [gc](#gc)
-        - [gccapacity](#gccapacity)
-        - [gcnew](#gcnew)
-        - [gcnewcapacity](#gcnewcapacity)
-        - [gcold](#gcold)
-        - [gcoldcapacity](#gcoldcapacity)
-        - [gcmetacapacity](#gcmetacapacity)
-        - [gcutil](#gcutil)
-        - [printcompilation](#printcompilation)
-    - [jstack](#jstack)
-    - [GUI监控工具](#gui监控工具)
-        - [eclipse memory analyzer](#eclipse-memory-analyzer)
-    - [GC](#gc)
-    - [堆内存分配](#堆内存分配)
-    - [非堆内存分配](#非堆内存分配)
+- [jvm监控](#jvm%e7%9b%91%e6%8e%a7)
+  - [官方文档](#%e5%ae%98%e6%96%b9%e6%96%87%e6%a1%a3)
+  - [jps](#jps)
+  - [jmap和jhat](#jmap%e5%92%8cjhat)
+  - [jstat](#jstat)
+  - [jstack](#jstack)
+  - [GUI监控工具](#gui%e7%9b%91%e6%8e%a7%e5%b7%a5%e5%85%b7)
+    - [eclipse memory analyzer](#eclipse-memory-analyzer)
+  - [GC](#gc)
+  - [堆内存分配](#%e5%a0%86%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d)
+  - [非堆内存分配](#%e9%9d%9e%e5%a0%86%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d)
 
 <!-- /TOC -->
 
@@ -116,8 +105,6 @@ Definitions:
   -J<flag>      Pass <flag> directly to the runtime system.
 ```
 
-### class
-
 `jstat -class pid`:显示加载class的数量，及所占空间等信息。
 
 | 列名  | 说明  |
@@ -127,8 +114,6 @@ Bytes | 所占用空间大小
 Unloaded | 未加载数量
 Bytes | 未加载占用空间
 Time | 时间
-
-### compiler
 
 `jstat -compiler pid` :显示VM实时编译的数量等信息。
 
@@ -140,9 +125,6 @@ Invalid | 不可用数量
 Time | 时间
 FailedType  | 失败类型
 FailedMethod | 失败的方法
-
-
-### gc
 
 `jstat -gc pid` :可以显示gc的信息，查看gc的次数，及时间。
 
@@ -166,7 +148,6 @@ FGC | 老年代垃圾回收次数
 FGCT | 老年代垃圾回收消耗时间
 GCT | 垃圾回收消耗总时间
 
-### gccapacity
 
 `jstat -gccapacity pid` 堆内存统计
 
@@ -192,8 +173,6 @@ YGC | 年轻代gc次数
 FGC | 老年代GC次数
 
 
-### gcnew
-
 `jstat -gcnew pid`  新生代垃圾回收统计
 
 | 列名  | 说明  |
@@ -209,8 +188,6 @@ EC | 伊甸园区的大小
 EU | 伊甸园区的使用大小
 YGC | 年轻代垃圾回收次数
 YGCT | 年轻代垃圾回收消耗时间
-
-### gcnewcapacity
 
 `jstat -gcnewcapacity pid `  new对象的信息及其占用量。新生代内存统计
 
@@ -228,8 +205,6 @@ EC | 当前伊甸园区大小
 YGC | 年轻代垃圾回收次数
 FGC | 老年代回收次数
 
-### gcold
-
 `jstat -gcold pid` : old对象的信息。 老年代垃圾回收统计
 
 | 列名  | 说明  |
@@ -245,8 +220,6 @@ FGC | 老年代垃圾回收次数
 FGCT | 老年代垃圾回收消耗时间
 GCT | 垃圾回收消耗总时间
 
-### gcoldcapacity
-
 `jstat -gcoldcapacity pid` old对象的信息及其占用量。
 
 | 列名  | 说明  |
@@ -259,8 +232,6 @@ YGC | 年轻代垃圾回收次数
 FGC | 老年代垃圾回收次数
 FGCT | 老年代垃圾回收消耗时间
 GCT | 垃圾回收消耗总时间
-
-### gcmetacapacity
 
 `jstat -gcmetacapacity pid`: 元数据空间统计
 
@@ -278,8 +249,6 @@ FGCT | 老年代垃圾回收消耗时间
 GCT | 垃圾回收消耗总时间
 
 
-### gcutil
-
 `jstat -gcutil pid 1000 10 `: 1000ms统计一次gc情况统计10次；
 
 | 列名  | 说明  |
@@ -294,8 +263,6 @@ YGC | 年轻代垃圾回收次数
 FGC | 老年代垃圾回收次数
 FGCT | 老年代垃圾回收消耗时间
 GCT | 垃圾回收消耗总时间
-
-### printcompilation
 
 `jstat -printcompilation pid` :当前VM执行的信息。
 
