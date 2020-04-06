@@ -1,10 +1,10 @@
 # Exception 异常
 
-![ae](../../img/java/exception/Exception顶级类结构图.png)
+![ae](img/Exception顶级类结构图.png)
 
 ## 运行时异常
 
-![ae](../../img/java/exception/RuntimeException.png)
+![ae](img/RuntimeException.png)
 
 
 java.lang.ArrayIndexOutOfBoundsException 
@@ -35,7 +35,7 @@ java.lang.NumberFormatException
 ## Error
 
 
-![ae](../../img/java/exception/Error.png)
+![ae](img/Error.png)
 
 Error类层次结构描述了Java运行时系统的内部错误和资源耗尽错误。应用程序不应该抛出这种类型的错误。如果出现了这样的内部错误，除了通告给用户，并尽力使程序安全地终止之外，再也无能为力了。这种情况很少出现。
 

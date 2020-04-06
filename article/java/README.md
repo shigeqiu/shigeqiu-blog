@@ -2,19 +2,19 @@
 
 ## Basic
 
-- [1.1 简单易懂的日志打印](1.1_打印日志.md)
-- [1.2 进制数表示](1.2_进制数表示.md)
-- [1.3 Base64编解码](1.3_base64编解码.md)
-- [1.4 理解`Byte`与`Bit`](1.4_理解Byte与Bit.md)
-- [1.5 访问控制](1.5_访问控制.md)
-- [1.6 `String`字符串](1.6_String字符串.md)
-- [1.7 理解`static`和`final`关键字](1.7_static和final关键字.md)
-- [1.8 Servlet生命周期与线程安全](1.8_Servlet生命周期与线程安全.md)
-- [1.9 常见异常Exception](1.9_Exception.md)
-- [1.10 Object方法](1.10_Object方法.md)
-- [1.11 Integer面试题](1.11_Integer面试题.md)
-- [1.12 try catch finally 执行顺序](1.12_trycatchfinally执行顺序.md)
-- [1.13 swich case 细节](1.13_swich-cash细节.md)
+- [1.1 简单易懂的日志打印](1_basic/1_打印日志.md)
+- [1.2 进制数表示](1_basic/2_进制数表示.md)
+- [1.3 Base64编解码](1_basic/3_base64编解码.md)
+- [1.4 理解`Byte`与`Bit`](1_basic/4_理解Byte与Bit.md)
+- [1.5 访问控制](1_basic/5_访问控制.md)
+- [1.6 `String`字符串](1_basic/6_String字符串.md)
+- [1.7 理解`static`和`final`关键字](1_basic/7_static和final关键字.md)
+- [1.8 Servlet生命周期与线程安全](1_basic/8_Servlet生命周期与线程安全.md)
+- [1.9 常见异常Exception](1_basic/9_Exception.md)
+- [1.10 Object方法](1_basic/10_Object方法.md)
+- [1.11 Integer面试题](1_basic/11_Integer面试题.md)
+- [1.12 try catch finally 执行顺序](1_basic/12_trycatchfinally执行顺序.md)
+- [1.13 swich case 细节](1_basic/13_swich-cash细节.md)
 
 ## 俯视 Overlook code
 
