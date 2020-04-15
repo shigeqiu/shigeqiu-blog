@@ -3,6 +3,7 @@
 
 - [安装](安装.md)
 - [基础](基础.md)
+- [集群健康](集群健康.md)
 
 
 > - [官方文档](https://www.elastic.co/guide/index.html)

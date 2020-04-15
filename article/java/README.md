@@ -19,9 +19,9 @@
 
 ## 俯视 Overlook code
 
-- [2.1 设计模式](2.1_设计模式/README.md)
-- [2.2 单体应用下合理划分](2.2_单体应用下合理划分.md)
-- [2.3 微服务体系服务分层](2.3_微服务体系服务分层.md)
+- [1 单体应用下合理划分](2_overlook/1_单体应用下合理划分.md)
+- [2 微服务体系服务分层](2_overlook/2_微服务体系服务分层.md)
+- [3 设计模式](2_overlook/3_设计模式/README.md)
 
 ## 理解JVM虚拟机
 
@@ -55,11 +55,11 @@
 - [6 Semaphore](5_AQS/6_Semaphore.md)
 - [7 Exchanger](5_AQS/7_exchanger.md)
 
-## 集合
+## Map & Collection
 
-- [5.1 HashMap](5.1_HashMap.md)
-- [5.2 ArrayList与LinkedList](5.2_ArrayList与LinkedList.md)
-- [5.3 Hashtable](5.3_hashtable.md)
+- [1 HashMap](6_map_collection/1_HashMap.md)
+- [2 ArrayList与LinkedList](6_map_collection/2_ArrayList与LinkedList.md)
+- [3 Hashtable](6_map_collection/3_hashtable.md)
 - TreeMap
 - Vector
 - LinkedHashSet、LinkedHashMap
