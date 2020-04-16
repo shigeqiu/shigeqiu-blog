@@ -12,7 +12,7 @@
 - [1.8 Servlet生命周期与线程安全](1_basic/8_Servlet生命周期与线程安全.md)
 - [1.9 常见异常Exception](1_basic/9_Exception.md)
 - [1.10 Object方法](1_basic/10_Object方法.md)
-- [1.11 Integer面试题](1_basic/11_Integer面试题.md)
+- [1.11 Integer](1_basic/11_integer.md)
 - [1.12 try catch finally 执行顺序](1_basic/12_trycatchfinally执行顺序.md)
 - [1.13 swich case 细节](1_basic/13_swich-cash细节.md)
 - [1.14 foreach 循环删除](1_basic/14_foreach.md)

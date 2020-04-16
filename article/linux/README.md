@@ -10,7 +10,7 @@
 - [1.7 压缩and解压](1.7_压缩and解压.md)
 - [1.8 du和df](1.8_du和df.md)
 - [1.9 which命令](1.9_which命令.md)
-- [1.10 Linux系统选择.md](1.10_linux系统选择.md)
+- [1.10 Linux系统选择](1.10_linux系统选择.md)
 - whereis
 
 ## 用户
@@ -27,7 +27,7 @@
 
 ## 系统
 
-- [4.1 top.md](4.1_top.md)
+- [4.1 top](4.1_top.md)
 - lsof
 - 抓包工具tcpdump
 
