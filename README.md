@@ -22,7 +22,7 @@
 ## UPDATE
 
 - [Elasticsearch](article/elasticsearch/README.md)
-- [其他 - 暂未归类](article/other/README.md)
+- [Other](article/other/README.md)
 
 
 # ☆★☆☆☆
