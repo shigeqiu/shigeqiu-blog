@@ -101,7 +101,7 @@ static class Node<K,V> implements Map.Entry<K,V> {
 
 ## 概述
 
-![aa](../../img/java/hashMap桶.png)
+![aa](img/hashMap桶.png)
 
 https://blog.csdn.net/zxt0601/article/details/77413921
 

@@ -54,6 +54,7 @@
 - [5 CyclicBarrier](5_AQS/5_CyclicBarrier.md)
 - [6 Semaphore](5_AQS/6_Semaphore.md)
 - [7 Exchanger](5_AQS/7_exchanger.md)
+- [8 从ReentrantLock的实现看AQS的原理及应用](5_AQS/8_AQS.md)
 
 ## Map & Collection
 
