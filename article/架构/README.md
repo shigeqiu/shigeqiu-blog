@@ -14,8 +14,8 @@
 
 ## 分布式锁
 
-- [分布式锁](分布式锁.md)
-- [Redis分布式锁最牛逼的实现](Redis分布式锁最牛逼的实现.md)
+- [Redis和Zookeeper实现](Redis和Zookeeper实现.md)
+- [Redis分布式锁之Redlock实现](Redis分布式锁之Redlock实现.md)
 - [大家所推崇的Redis分布式锁真的就万无一失吗](大家所推崇的Redis分布式锁真的就万无一失吗.md)
 
 ## 定时任务的分布式调度

@@ -36,14 +36,13 @@
 
 ## 多线程
 
-- [4.1 基础问答](4_多线程/1_基础问答.md)
-- [4.2 线程状态](4_多线程/2_线程状态.md)
-- [4.3 线程池](4_多线程/3_线程池.md)
-- [4.4 Thread类中的方法](4_多线程/4_Thread类中的方法.md)
-- [4.5 `wait` 和 `notify`](4_多线程/5_wait和notify.md)
-- [4.6 Synchronized和Static Synchronized区别](4_多线程/6_Synchronized和StaticSynchronized区别.md)
-- [4.7 wait和notify执行顺序](4_多线程/7_wait和notify执行顺序.md)
-- [4.8 面试题 顺序输出ABC](4_多线程/8_面试题顺序输出ABC.md)
+- [1 线程状态](4_多线程/1_线程状态.md)
+- [2 Thread类中的方法](4_多线程/2_Thread类中的方法.md)
+- [3 `wait` 和 `notify`](4_多线程/3_wait和notify.md)
+- [4 Synchronized和Static Synchronized区别](4_多线程/4_Synchronized和StaticSynchronized区别.md)
+- [5 Monitor机制](4_多线程/5_monitor.md)
+- [6 线程池](4_多线程/6_线程池.md)
+- [7 应用示例之输出ABC.md](4_多线程/7_应用示例-输出ABC.md)
 
 ## AQS 机制
 
