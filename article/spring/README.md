@@ -26,6 +26,7 @@
 - [3.4 Ribbon](3.4_ribbon.md)
 - [3.5 Hystrix](3.5_hystrix.md)
 - [3.5 Feign](3.6_feign.md)
+- hystrix 降级
 
 ## Spring 事务源码
 
