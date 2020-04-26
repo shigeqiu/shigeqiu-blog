@@ -2,7 +2,7 @@
 
 - [1.1 Kafka](1.1_kafka.md)
 - [1.2 RabbitMQ 安装](1.2_rabbit安装.md)
-- [1.3 RabbitMQ](1.3_RabbitMQ.md)
+- [1.3_RabbitMQ 交换器](1.3_rabbit交换器.md)
 - [1.4 Spring Boot集成](1.4_springboot集成.md)
 
 
