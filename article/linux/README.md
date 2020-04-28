@@ -2,16 +2,15 @@
 
 ## 常用操作
 
-- [1.1 入门基本命令](1.1_入门基本命令.md)
+- [1.1 Linux系统选择](1.1_linux系统选择.md)
 - [1.2 安装完CentOS7后必做的七件事](1.2_安装完CentOS7后必做的七件事.md)
-- [1.3 jar后台运行](1.3_jar后台运行.md)
-- [1.4 防火墙firewall](1.4_防火墙firewall.md)
-- [1.5 netstat](1.5_netstat.md)
-- [1.7 压缩and解压](1.7_压缩and解压.md)
-- [1.8 du和df](1.8_du和df.md)
-- [1.9 which命令](1.9_which命令.md)
-- [1.10 Linux系统选择](1.10_linux系统选择.md)
-- whereis
+- [1.3 入门基本命令](1.3_入门基本命令.md)
+- [1.4 jar后台运行](1.4_jar后台运行.md)
+- [1.5 防火墙firewall](1.5_防火墙firewall.md)
+- [1.6 netstat](1.6_netstat.md)
+- [1.7 `tar` 命令](1.7_tar命令.md)
+- [1.8 `du` 和 `df`](1.8_du和df.md)
+- [1.9 `which` 与 `whereis`](1.9_which_whereis.md)
 
 ## 用户
 
