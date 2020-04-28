@@ -108,7 +108,7 @@ public boolean unlock(String lockKey, String uniqueValue){
 
 举例说明，某个服务有2个服务实例：A和B，初始情况下A获取了锁然后对资源进行操作（可以假设这个操作很耗费资源），B没有获取到锁而不执行任何操作，此时B可以看做是A的热备。当A出现异常时，B可以“转正”。当锁出现异常时，比如Redis master宕机，那么B可能会同时持有锁并且对资源进行操作，如果操作的结果是幂等的（或者其它情况），那么也可以使用这种方案。这里引入分布式锁可以让服务在正常情况下避免重复计算而造成资源的浪费。
 
-为了应对这种情况，antriez提出了Redlock算法。Redlock算法的主要思想是：假设我们有N个Redis master节点，这些节点都是完全独立的，我们可以运用前面的方案来对前面单个的Redis master节点来获取锁和解锁，如果我们总体上能在合理的范围内或者N/2+1个锁，那么我们就可以认为成功获得了锁，反之则没有获取锁（可类比Quorum模型）。虽然Redlock的原理很好理解，但是其内部的实现细节很是复杂，要考虑很多因素，具体内容可以参考：https://redis.io/topics/distlock 。有关Redlock的具体使用方式可以参考我之前转载的两篇文章《Redis分布式锁最牛逼的实现》和《Redission实现Redis分布式锁的N种姿势》。
+为了应对这种情况，antriez提出了Redlock算法。Redlock算法的主要思想是：假设我们有N个Redis master节点，这些节点都是完全独立的，我们可以运用前面的方案来对前面单个的Redis master节点来获取锁和解锁，如果我们总体上能在合理的范围内或者N/2+1个锁，那么我们就可以认为成功获得了锁，反之则没有获取锁（可类比Quorum模型）。虽然Redlock的原理很好理解，但是其内部的实现细节很是复杂，要考虑很多因素，具体内容可以参考：https://redis.io/topics/distlock 。
 
 Redlock算法也并非是“银弹”，他除了条件有点苛刻外，其算法本身也被质疑。关于Redis分布式锁的安全性问题，在分布式系统专家Martin Kleppmann和Redis的作者antirez之间就发生过一场争论。这场争论的内容大致如下：
 
