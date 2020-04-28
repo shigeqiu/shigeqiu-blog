@@ -12,10 +12,10 @@
 - [Nginx](article/nginx/README.md)
 - [MongoDB](article/mongodb/README.md)
 - [MQ](article/mq/README.md)
-- [架构](article/架构/README.md)
+- [分布式](article/distributed/README.md)
 - [Guava](article/guava/README.md)
 - [Redis](article/redis/README.md)
-- [算法](article/算法/README.md)
+- [算法](article/algorithm/README.md)
 - [Reading](article/reading/README.md)
 - [API Gateway](article/gateway/README.md)
 
