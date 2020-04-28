@@ -16,12 +16,12 @@
 
 - [Redis和Zookeeper实现](Redis和Zookeeper实现.md)
 - [Redis分布式锁之Redlock实现](Redis分布式锁之Redlock实现.md)
-- [大家所推崇的Redis分布式锁真的就万无一失吗](大家所推崇的Redis分布式锁真的就万无一失吗.md)
+- [Redis的争议](Redis的争议.md)
 
 ## 定时任务的分布式调度
 
 - [Cron表达式](Cron表达式.md)
-- spring task
+- Spring Task
 - quartz的集群解决方案
 - TBSchedule
 - 当当开源 Elastic-job https://github.com/elasticjob
@@ -39,8 +39,6 @@
 
 
 ## 序列化
-
-语言无关
 
 - Apache Avro
 - Apache Thrift
