@@ -13,7 +13,7 @@ Generics-aware interface supporting the Factory Method design pattern.
 
 支持工厂方法设计模式的泛型感知接口。
 
-![Factory](../../img/shiro/factory.png)
+![Factory](img/factory.png)
 
 ## AbstractFactory<T>
 

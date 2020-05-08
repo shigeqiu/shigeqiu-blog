@@ -14,11 +14,11 @@
 
 ## 两大顶级接口分支UML图
 
-![ae](../../../img/spring/BeanFactory_ApplicationContext.png)
+![ae](../img/BeanFactory_ApplicationContext.png)
 
 上图为**BeanFactory**到**ApplicationContext**的继承关系
 
-![ae](../../../img/spring/BeanFactory_ConfigurableListableBeanFactory.png)
+![ae](../img/BeanFactory_ConfigurableListableBeanFactory.png)
 
 上图为**BeanFactory**到**ConfigurableListableBeanFactory**的继承关系
 

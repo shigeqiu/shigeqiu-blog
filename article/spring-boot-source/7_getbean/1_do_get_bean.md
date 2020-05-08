@@ -46,7 +46,7 @@ the required type of the bean to retrieve , 要检索的bean的必需类型 .
 
 ## 方法体
 
-![ae](../../../img/spring/spring-boot-source/20200310223245.png)
+![ae](../img/20200310223245.png)
 
 解析beanName , 如果存在工厂引用前缀则去掉，并将别名解析为规范名称。
 

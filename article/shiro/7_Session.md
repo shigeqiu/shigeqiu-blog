@@ -10,7 +10,7 @@
 
 <!-- /TOC -->
 
-![Factory](../../img/shiro/SessionManager.png)
+![Factory](img/SessionManager.png)
 
 ## AbstractSessionManager
 主要定义了一些常量，和一个全局的session超时属性，并提供了get/set方法。  

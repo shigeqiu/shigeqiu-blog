@@ -12,7 +12,7 @@
 
 ## <类>MapContext - 存储所有的Context（上下文）
 
-![Factory](../../img/shiro/SubjectContext.png)
+![Factory](img/SubjectContext.png)
 
 这个对象中仅包括一个私有的`Map<String,Object>` **backingMap** 对象，还包含一些操作该对象的方法。所以说这个对象主要是用于给子类提供数据存储并且操作的。这要的key-value如下所示。
 
@@ -42,7 +42,7 @@
 
 
 
-![Factory](../../img/shiro/SubjectContext-method.png)
+![Factory](img/SubjectContext-method.png)
 
 
 描述  | DefaultWebSubjectFactory

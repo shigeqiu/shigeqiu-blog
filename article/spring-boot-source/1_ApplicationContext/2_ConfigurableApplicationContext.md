@@ -1,6 +1,6 @@
 # ConfigurableApplicationContext
 
-![ae](../../../img/spring/ConfigurableApplicationContext.png)
+![ae](../img/ConfigurableApplicationContext.png)
 
 上图为**ConfigurableApplicationContext** 
 

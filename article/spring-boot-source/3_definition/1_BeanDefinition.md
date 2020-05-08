@@ -14,12 +14,12 @@
 
 ## uml
 
-![ae](../../../img/spring/BeanDefinition.png)
+![ae](../img/BeanDefinition.png)
 
 上图为**BeanDefinition顶级接口**继承关系
 
 
-![ae](../../../img/spring/BeanDefinition实现类.png)
+![ae](../img/BeanDefinition实现类.png)
 
 上图为**BeanDefinition顶级接口**的**主要实现类**的继承关系
 

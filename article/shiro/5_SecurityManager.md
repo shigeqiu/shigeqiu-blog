@@ -39,7 +39,7 @@
 
 
 
-![Factory](../../img/shiro/Manager.png)
+![Factory](img/Manager.png)
 
 # 顶级接口
 

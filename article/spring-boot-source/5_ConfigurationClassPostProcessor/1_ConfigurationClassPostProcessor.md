@@ -9,7 +9,7 @@
 
 <!-- /TOC -->
 
-![ae](../../../img/spring/ConfigurationClassPostProcessor.png)
+![ae](../img/ConfigurationClassPostProcessor.png)
 
 上图为**实现类ConfigurationClassPostProcessor**的继承关系
 

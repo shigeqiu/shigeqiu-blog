@@ -1,7 +1,7 @@
 # AnnotationConfigServletWebServerApplicationContext
 
 
-![ae](../../../img/spring/AnnotationConfigServletWebServerApplicationContext.png)
+![ae](../img/AnnotationConfigServletWebServerApplicationContext.png)
 
 上图为**AnnotationConfigServletWebServerApplicationContext**继承关系
 

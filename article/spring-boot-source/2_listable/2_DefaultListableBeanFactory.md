@@ -8,7 +8,7 @@
 
 <!-- /TOC -->
 
-![ae](../../../img/spring/DefaultListableBeanFactory.png)
+![ae](../img/DefaultListableBeanFactory.png)
 
 上图为**DefaultListableBeanFactory**的继承关系
 

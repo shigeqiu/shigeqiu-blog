@@ -10,7 +10,7 @@
 <!-- /TOC -->
 
 
-![ae](../../../img/spring/BeanFactoryPostProcessor.png)
+![ae](../img/BeanFactoryPostProcessor.png)
 
 上图为**BeanFactoryPostProcessor**与**BeanDefinitionRegistryPostProcessor**接口继承关系
 

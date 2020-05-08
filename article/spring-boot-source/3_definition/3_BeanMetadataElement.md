@@ -3,15 +3,15 @@
 
 ## uml
 
-![ae](../../../img/spring/BeanMetadataElement_Mergeable.png)
+![ae](../img/BeanMetadataElement_Mergeable.png)
 
 上图为**BeanMetadataElement**和**Mergeable**两大接口、实现类之间的关系
 
-![ae](../../../img/spring/BeanMetadataElement.png)
+![ae](../img/BeanMetadataElement.png)
 
 上图为**BeanMetadataElement**接口、实现类之间的关系
 
-![ae](../../../img/spring/BeanMetadataElement_ComponentDefinition.png)
+![ae](../img/BeanMetadataElement_ComponentDefinition.png)
 
 上图为**BeanMetadataElement**和**ComponentDefinition**两大接口、实现类之间的关系
 

@@ -8,7 +8,7 @@
 
 <!-- /TOC -->
 
-![Factory](../../img/shiro/ShiroFilter.png)
+![Factory](img/ShiroFilter.png)
 
 ## ShiroFilter初始化
 
