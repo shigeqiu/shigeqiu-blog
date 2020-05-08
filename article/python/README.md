@@ -28,11 +28,16 @@
 
 ## 人工智能
 
-- tensorflow 
 - CycleGAN
+- 谷歌的 TensorFlow
+- Facebook 的 PyTorch
 
 CycleGAN是一个由成对图像训练成的神经网络，可以实现图像风格转换。比如吧一张狗狗的照片换成梵高名画《星空》的风格：
 
 ## 学习
 
 - Python 学习100天 https://github.com/jackfrued/Python-100-Days
+
+## 统计图表
+
+- Matplotlib

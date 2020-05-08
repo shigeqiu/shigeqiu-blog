@@ -32,7 +32,7 @@ Leaf第一个版本采用了预分发的方式生成ID，即可以在DB之上挂
 
 整个服务的具体处理过程如下：
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/dab50ae3c841aaef9e11c93b9ca4272d.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/dab50ae3c841aaef9e11c93b9ca4272d.jpg)
 
 - Leaf Server 1：从DB加载号段[1，1000]。
 - Leaf Server 2：从DB加载号段[1001，2000]。
@@ -42,11 +42,11 @@ Leaf第一个版本采用了预分发的方式生成ID，即可以在DB之上挂
 
 Leaf数据库中的号段表格式如下：
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/256257c4dcf863914487447b1838c532.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/256257c4dcf863914487447b1838c532.jpg)
 
 Leaf Server加载号段的SQL语句如下：
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/038270b0b2d2e62e358297deef00d93f.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/038270b0b2d2e62e358297deef00d93f.jpg)
 
 整体上，V1版本实现比较简单，主要是为了尽快解决业务层DB压力的问题，而快速迭代出的一个版本。因而在生产环境中，也发现了些问题。比如：
 
@@ -57,7 +57,7 @@ Leaf Server加载号段的SQL语句如下：
 
 为了解决这两个问题，Leaf采用了异步更新的策略，同时通过双Buffer的方式，保证无论何时DB出现问题，都能有一个Buffer的号段可以正常对外提供服务。只要DB在一个Buffer的下发周期内恢复，就不会影响整个Leaf的可用性。
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/a17bbfce36cde60020e8bc61be37e4f9.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/a17bbfce36cde60020e8bc61be37e4f9.jpg)
 
 这个版本代码在线上稳定运行了半年左右，Leaf又遇到了新的问题：
 
@@ -86,13 +86,13 @@ Leaf Server加载号段的SQL语句如下：
 
 针对服务自身的监控，Leaf提供了Web层的内存数据映射界面，可以实时看到所有号段的下发状态。比如每个号段双Buffer的使用情况，当前ID下发到了哪个位置等信息都可以在Web界面上查看。
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/f19194db5ccdbfa9b6e8c6e5b1d8c8e9.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/f19194db5ccdbfa9b6e8c6e5b1d8c8e9.jpg)
 
 ## Leaf Snowflake
 
 Snowflake，Twitter开源的一种分布式ID生成算法。基于64位数实现，下图为Snowflake算法的ID构成图。
 
-![](../../img/架构/Leaf-美团分布式ID生成服务开源/90805b57ab707004d17e6132125f5a9e.jpg)
+![](img/架构/Leaf-美团分布式ID生成服务开源/90805b57ab707004d17e6132125f5a9e.jpg)
 
 
 - 第1位置为0。

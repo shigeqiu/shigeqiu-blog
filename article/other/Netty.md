@@ -7,7 +7,7 @@
   - [业务线程，io线程如何使用](#%e4%b8%9a%e5%8a%a1%e7%ba%bf%e7%a8%8bio%e7%ba%bf%e7%a8%8b%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8)
   - [理解nio线程模型](#%e7%90%86%e8%a7%a3nio%e7%ba%bf%e7%a8%8b%e6%a8%a1%e5%9e%8b)
   - [LengthFieldBasedFrameDecoder](#lengthfieldbasedframedecoder)
-  - [《Netty权威指南（第二版）》 作者：李林峰 2015.4](#netty%e6%9d%83%e5%a8%81%e6%8c%87%e5%8d%97%e7%ac%ac%e4%ba%8c%e7%89%88-%e4%bd%9c%e8%80%85%e6%9d%8e%e6%9e%97%e5%b3%b0-20154)
+  - [《Netty权威指南（第二版）》 作者：李林峰  2015.4](#netty%e6%9d%83%e5%a8%81%e6%8c%87%e5%8d%97%e7%ac%ac%e4%ba%8c%e7%89%88-%e4%bd%9c%e8%80%85%e6%9d%8e%e6%9e%97%e5%b3%b0-20154)
     - [第一部分](#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86)
     - [第二部分 （netty 开发）](#%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86-netty-%e5%bc%80%e5%8f%91)
   - [4种网络IO模型](#4%e7%a7%8d%e7%bd%91%e7%bb%9cio%e6%a8%a1%e5%9e%8b)
@@ -183,20 +183,19 @@ EventLoopGroup workerGroup = new NioEventLoopGroup(2);
 
 1. netty 解决TCP 粘包/拆包 导致的半包读写问题
 
-1.1 lineBasedFrameDecoder + StringDecoder   以换行符为结束标志的解码器 （"\n"或者"\r\n"）
-1.2 DelimiterBasedFrameDecoder 以分隔符作为码流的结束标示的消息编码
-1.3 FixedLengthFrameDecoder 固定长度解码器，能够按照指定的长度对消息进行自动解码
-1.4.1 LengthFieldPrepender 编码器之前加，将在ByteBuf之前增加2（可配置）个字节的消息长度字段
-1.4.2 LengthFieldBasedFrameDecoder 解码器之前加，接收的永远是整包
+- 1.1 lineBasedFrameDecoder + StringDecoder   以换行符为结束标志的解码器 （"\n"或者"\r\n"）
+- 1.2 DelimiterBasedFrameDecoder 以分隔符作为码流的结束标示的消息编码
+- 1.3 FixedLengthFrameDecoder 固定长度解码器，能够按照指定的长度对消息进行自动解码
+- 1.4.1 LengthFieldPrepender 编码器之前加，将在ByteBuf之前增加2（可配置）个字节的消息长度字段
+- 1.4.2 LengthFieldBasedFrameDecoder 解码器之前加，接收的永远是整包
 
 2. netty 私有协议栈开发
 
-1.1 客户端
-1.1.1 LoginAuthReqHandler 
-1.1.2 HeartBeatReqHandler
-
-1.2 服务端
-1.2.1 LoginAuthRespHandler
+- 1.1 客户端
+- 1.1.1 LoginAuthReqHandler 
+- 1.1.2 HeartBeatReqHandler
+- 1.2 服务端
+- 1.2.1 LoginAuthRespHandler
 
 
 ## 4种网络IO模型
