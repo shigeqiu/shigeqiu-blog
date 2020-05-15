@@ -12,5 +12,6 @@
 - [10 绘图 processon](https://processon.com/)
 - [11 绘图 draw.io](https://www.draw.io/)
 - [12 Logo](https://logomakr.com/)
+- 截图工具 Snipaste
 
 

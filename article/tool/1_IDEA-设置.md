@@ -2,11 +2,11 @@
 
 <!-- TOC -->
 
-- [IDEA 设置](#idea-设置)
-    - [设置代码提示和自动补全功能](#设置代码提示和自动补全功能)
-    - [默认编码](#默认编码)
-    - [Code Templates](#code-templates)
-    - [插件](#插件)
+- [IDEA 设置](#idea-%e8%ae%be%e7%bd%ae)
+  - [设置代码提示和自动补全功能](#%e8%ae%be%e7%bd%ae%e4%bb%a3%e7%a0%81%e6%8f%90%e7%a4%ba%e5%92%8c%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e5%8a%9f%e8%83%bd)
+  - [默认编码](#%e9%bb%98%e8%ae%a4%e7%bc%96%e7%a0%81)
+  - [Code Templates](#code-templates)
+  - [插件](#%e6%8f%92%e4%bb%b6)
 
 <!-- /TOC -->
 
@@ -43,3 +43,8 @@
 - Grep Console 日志高亮
 - Alibaba Cloud Toolkit 一键开发部署
 - Statistic 代码统计
+- Free Mybatis plugin 
+- jclasslib Bytecode viewer  字节码
+- IntelliJ Lombok plugin
+- Alibaba Cloud Toolkit 
+- Builder Generator
