@@ -14,3 +14,8 @@
 
 - 简体中文 `Chinese (Simplified) Language Pack for Visual Studio Code`
 - `Markdown TOC`
+- Markdown All in One
+- Markdown Table Formatter
+- Markdown Preview Enhanced
+- hexdump for VSCode
+- XML Tools
