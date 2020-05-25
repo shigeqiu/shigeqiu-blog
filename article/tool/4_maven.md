@@ -188,3 +188,7 @@ mvn package -Dmaven.test.skip=true
     </configuration>  
 </plugin> 
 ```
+
+
+
+今天打开一个新项目，idea一片红，很多已经导入的包还是报错。网上看到很多人都是说设置里面换maven 清缓存。但都试过了。最后在命令行输入 `mvn idea:idea` 然后 file–invalidate caches 重启就可以了
