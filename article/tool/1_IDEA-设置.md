@@ -2,11 +2,12 @@
 
 <!-- TOC -->
 
-- [IDEA 设置](#idea-%e8%ae%be%e7%bd%ae)
-  - [设置代码提示和自动补全功能](#%e8%ae%be%e7%bd%ae%e4%bb%a3%e7%a0%81%e6%8f%90%e7%a4%ba%e5%92%8c%e8%87%aa%e5%8a%a8%e8%a1%a5%e5%85%a8%e5%8a%9f%e8%83%bd)
-  - [默认编码](#%e9%bb%98%e8%ae%a4%e7%bc%96%e7%a0%81)
+- [IDEA 设置](#idea-设置)
+  - [设置代码提示和自动补全功能](#设置代码提示和自动补全功能)
+  - [默认编码](#默认编码)
   - [Code Templates](#code-templates)
-  - [插件](#%e6%8f%92%e4%bb%b6)
+  - [粘贴多行代码时，总是自动缩进](#粘贴多行代码时总是自动缩进)
+  - [插件](#插件)
 
 <!-- /TOC -->
 
@@ -37,6 +38,11 @@
  * @create ${YEAR}-${MONTH}-${DAY}
  */
 ```
+
+
+## 粘贴多行代码时，总是自动缩进
+
+`settings ->eidtor->smart keys -> reformat on paste  选择 NONE`
 
 ## 插件
 

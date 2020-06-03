@@ -13,7 +13,7 @@
 ## 插件
 
 - 简体中文 `Chinese (Simplified) Language Pack for Visual Studio Code`
-- `Markdown TOC`
+- `Markdown TOC` (alanwalk.markdown-toc)
 - Markdown All in One
 - Markdown Table Formatter
 - Markdown Preview Enhanced
