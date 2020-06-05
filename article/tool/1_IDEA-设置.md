@@ -7,6 +7,7 @@
   - [默认编码](#默认编码)
   - [Code Templates](#code-templates)
   - [粘贴多行代码时，总是自动缩进](#粘贴多行代码时总是自动缩进)
+  - [自动清除无效 import 和 清除无效 import 的快捷键](#自动清除无效-import-和-清除无效-import-的快捷键)
   - [插件](#插件)
 
 <!-- /TOC -->
@@ -44,6 +45,27 @@
 
 `settings ->eidtor->smart keys -> reformat on paste  选择 NONE`
 
+## 自动清除无效 import 和 清除无效 import 的快捷键
+
+自动清除的配置方法: 
+
+路径： `settings -> eidtor -> general -> auto import` 
+
+ - 勾选`optimize imports on the fly (for current project)`，
+  
+在当前项目下会自动清除无效的import，而且这个是随时自动清除的。
+
+**使用idea一次性清理所有java文件中多余导入未使用的包，首先ctrl+alt+s打开设置界面，红框中的位置打勾** 
+
+![](img/20180403131516326.png)
+
+点击ok后关闭，然后ctrl + alt + o弹出如下窗口：
+
+![](img/20180403131545555.png)
+
+红框中的意思为某目录下所有文件，选中后run即可
+
+
 ## 插件
 
 - Grep Console 日志高亮
@@ -55,6 +77,7 @@
 - Builder Generator
 - Gitmoji
 - CamelCase 驼峰转换
+- MyBatisCodeHelperPro 
 
 字节码
 
