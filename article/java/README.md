@@ -68,3 +68,4 @@
 ## java 8 新特性
 
 - Stream
+- Function
