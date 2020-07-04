@@ -2,11 +2,11 @@
 
 ## LIST
 
-- [开发者常用工具](article/tool/README.md)
+- [Dev Tools](article/tool/README.md)
 - [Java](article/java/README.md)
 - [Spring](article/spring/README.md)
-- [Spring Boot 源码阅读](article/spring-boot-source/README.md)
-- [Shiro 源码阅读](article/shiro/README.md)
+- [Spring Boot source code](article/spring-boot-source/README.md)
+- [Shiro source code](article/shiro/README.md)
 - [MySQL](article/mysql/README.md)
 - [Linux](article/linux/README.md)
 - [Nginx](article/nginx/README.md)
@@ -15,14 +15,15 @@
 - [Guava](article/guava/README.md)
 - [Redis](article/redis/README.md)
 - [Reading](article/reading/README.md)
-- [算法](article/algorithm/README.md)
+- [Algorithm](article/algorithm/README.md)
 - [API Gateway](article/gateway/README.md)
-- [分布式](article/distributed/README.md)
+- [Distributed](article/distributed/README.md)
 
 ## UPDATE
 
 - [Elasticsearch](article/elasticsearch/README.md)
 - [Other](article/other/README.md)
+- [Golang](article/golang/README.md)
 
 
 # ☆★☆☆☆
