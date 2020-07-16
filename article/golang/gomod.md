@@ -1,9 +1,29 @@
-# Go mod
+# 包管理
+
+<!-- TOC -->
+
+- [包管理](#包管理)
+  - [包管理](#包管理-1)
+  - [Go Mod](#go-mod)
+    - [方式一（推荐）:](#方式一推荐)
+    - [方式二（使用go mod replace）](#方式二使用go-mod-replace)
+
+<!-- /TOC -->
+
+
+## 包管理
+
+- Go Mod
+- Go Vendor 
+- Go dep
+- Go Modules
+
+## Go Mod
 
 > Go Module下使用本地包 https://www.cnblogs.com/dexte/p/12337220.html
 
 
-## 方式一（推荐）:
+### 方式一（推荐）:
 
 严格的说，方式一是使用项目目录下的go文件。
 项目目录如下：
@@ -30,7 +50,7 @@ main.go中调用log.go中的方法：import "sts/log"-> 此处为主目录下的
 log目录下的方法,变量等依然需要大写。如果不能正常使用可尝试在主目录下执行go mod tidy
 
 
-## 方式二（使用go mod replace）
+### 方式二（使用go mod replace）
 ```
 |── studyModule //项目主目录
 
