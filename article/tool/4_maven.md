@@ -3,18 +3,20 @@
 <!-- TOC -->
 
 - [Maven](#maven)
-  - [参考网址](#%e5%8f%82%e8%80%83%e7%bd%91%e5%9d%80)
-  - [阿里远程镜像](#%e9%98%bf%e9%87%8c%e8%bf%9c%e7%a8%8b%e9%95%9c%e5%83%8f)
-  - [用户的自定义localRepository的路径](#%e7%94%a8%e6%88%b7%e7%9a%84%e8%87%aa%e5%ae%9a%e4%b9%89localrepository%e7%9a%84%e8%b7%af%e5%be%84)
-  - [mvn命令](#mvn%e5%91%bd%e4%bb%a4)
-  - [eclipse执行mvn命令](#eclipse%e6%89%a7%e8%a1%8cmvn%e5%91%bd%e4%bb%a4)
-  - [pom配置](#pom%e9%85%8d%e7%bd%ae)
-    - [Dependency的配置说明](#dependency%e7%9a%84%e9%85%8d%e7%bd%ae%e8%af%b4%e6%98%8e)
+  - [参考网址](#参考网址)
+  - [阿里远程镜像](#阿里远程镜像)
+  - [用户的自定义localRepository的路径](#用户的自定义localrepository的路径)
+  - [mvn命令](#mvn命令)
+  - [eclipse执行mvn命令](#eclipse执行mvn命令)
+  - [pom配置](#pom配置)
+    - [Dependency的配置说明](#dependency的配置说明)
     - [relativePath](#relativepath)
-  - [指定模块](#%e6%8c%87%e5%ae%9a%e6%a8%a1%e5%9d%97)
-  - [跳过单元测试](#%e8%b7%b3%e8%bf%87%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95)
-    - [方式一](#%e6%96%b9%e5%bc%8f%e4%b8%80)
-    - [方式二](#%e6%96%b9%e5%bc%8f%e4%ba%8c)
+  - [指定模块](#指定模块)
+  - [跳过单元测试](#跳过单元测试)
+    - [方式一](#方式一)
+    - [方式二](#方式二)
+  - [传参](#传参)
+  - [清理项目依赖的本地仓库的maven包](#清理项目依赖的本地仓库的maven包)
 
 <!-- /TOC -->
 
@@ -192,3 +194,108 @@ mvn package -Dmaven.test.skip=true
 
 
 今天打开一个新项目，idea一片红，很多已经导入的包还是报错。网上看到很多人都是说设置里面换maven 清缓存。但都试过了。最后在命令行输入 `mvn idea:idea` 然后 file–invalidate caches 重启就可以了
+
+## 传参
+
+**-D代表（Properties属性）**
+
+Maven中的 `-D`（Properties属性）和 `-P` （Profiles配置文件）
+
+使用命令行设置属性-D的正确方法是：
+
+`mvn -DpropertyName=propertyValue clean package`
+
+- 如果propertyName不存在pom.xml，它将被设置。
+- 如果propertyName已经存在pom.xml，其值将被作为参数传递的值覆盖-D。
+- 
+要发送多个变量，请使用 **多个空格分隔符** 加 `-D`：
+
+```
+mvn -DpropA=valueA -DpropB=valueB -DpropC=valueC clean package
+```
+
+例如你的pom.xml如下：
+
+``` xml
+<properties>
+    <theme>myDefaultTheme</theme>
+</properties>
+```
+
+那么在这个执行过程中 `mvn -Dtheme=halloween clean package` 会覆盖theme的值，具有如下效果：
+
+``` xml
+<properties>
+    <theme>halloween</theme>
+</properties>
+```
+
+**-P代表（Profiles配置文件）**
+
+也就是说在 `<profiles>` 指定的 `<id>` 中，可以通过 `-P` 进行传递或者赋值。
+
+例如,你的pom.xml如下：
+
+``` xml
+<profiles>
+    <profile>
+        <id>test</id>
+        ...
+    </profile>
+  </profiles>
+```
+
+执行 `mvn test -Ptest` 为触发配置文件。
+
+``` xml
+<profile>
+  <id>test</id>
+  <activation>
+    <property>
+        <name>env</name>
+        <value>test</value>
+    </property>
+  </activation>
+</profile>
+```
+
+## 清理项目依赖的本地仓库的maven包
+
+```
+mvn dependency:purge-local-repository
+```
+这个命令会清理pom.xml中的包，并重新下载，但是并不清理不在pom.xml中的依赖包。
+
+```
+mvn dependency:purge-local-repository -DreResolve=false 
+```
+
+reResolve是否重新解析依赖关系
+
+``` 
+mvn dependency:purge-local-repository -DactTransitively=false -DreResolve=false 
+```
+
+actTransitively是否应该对所有传递依赖性起作用。默认值为true。
+
+例如：
+```
+mvn dependency:purge-local-repository -Dinclude=org.slf4j:slf4j-api
+
+mvn dependency:purge-local-repository -Dinclude=org.slf4j:slf4j-api,org.slf4j:log4j-over-slf4j
+
+```
+
+**Manual purge**
+
+还可以通过使用 `purge-local-repository` 目标并设置“ manualIncludes”或“ manualInclude”参数来清除不属于当前项目依赖关系树的特定依赖关系。任何手动包括的清除工件都将从本地存储库中删除，直到需要时才会重新解析。例如，这对于刷新父pom，导入的pom或Maven插件很有用。
+
+警告，如果从本地存储库中删除了依赖关系，但在以后的构建过程中需要，则在正常的构建过程中使用此目标可能会带来风险。通常，在构建结束时或在构建清理过程中，此目标是安全的。
+
+```
+mvn dependency:purge-local-repository -DmanualInclude=org.slf4j:slf4j-api,org.slf4j:log4j-over-slf4j
+```
+
+
+> 插件地址：http://maven.apache.org/plugins/maven-dependency-plugin/purge-local-repository-mojo.html
+> https://maven.apache.org/plugins/maven-dependency-plugin/examples/purging-local-repository.html#
