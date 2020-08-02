@@ -18,15 +18,13 @@
 - [Algorithm](article/algorithm/README.md)
 - [API Gateway](article/gateway/README.md)
 - [Distributed](article/distributed/README.md)
-
-## UPDATE
-
 - [Elasticsearch](article/elasticsearch/README.md)
-- [Other](article/other/README.md)
+- [Python](article/python/README.md)
 - [Golang](article/golang/README.md)
+- [Other](article/other/README.md)
 
 
-# ☆★☆☆☆
+## ☆★☆☆☆
 
 **子曰：“学而时习之，不亦说（yuè）乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”**  《论语 · 学而》
 
