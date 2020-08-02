@@ -19,6 +19,7 @@
 - [API Gateway](article/gateway/README.md)
 - [Distributed](article/distributed/README.md)
 - [Elasticsearch](article/elasticsearch/README.md)
+- [Instant Messaging](article/im/README.md)
 - [Python](article/python/README.md)
 - [Golang](article/golang/README.md)
 - [Other](article/other/README.md)
