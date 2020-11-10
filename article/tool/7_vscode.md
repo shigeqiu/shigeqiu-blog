@@ -9,6 +9,16 @@
 - `Alt+Shift+上下` 复制整行
 - `Alt+上下` 调换上下行位置
 - `Ctrl + B` 收起、展开左侧的侧边栏
+- `Ctrl + G` 跳转到指定行
+
+## 显示所有函数列表
+
+- 方法一：显示大纲
+- 方法二：`Shift + Ctrl + O`
+
+**参数提示**
+
+- 参数提示功能，默认的键位为 `Ctrl + Shift + Space`
 
 ## 插件
 
@@ -19,3 +29,9 @@
 - Markdown Preview Enhanced
 - hexdump for VSCode
 - XML Tools
+- Git History
+- GitLens
+
+## refence
+
+- 配置 https://juejin.im/post/6844903826063884296
