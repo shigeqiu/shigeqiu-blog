@@ -35,3 +35,9 @@ VsCode `setting.xml` 配置
 ## 工具
 
 - github.com/spf13/viper
+
+## 环境
+
+set GOARCH=amd64
+set GOOS=linux
+go build
