@@ -38,6 +38,25 @@ VsCode `setting.xml` 配置
 
 ## 环境
 
+windows 下打包 linux 的运行程序。
+
+
+
+设置变量
+```
 set GOARCH=amd64
 set GOOS=linux
+
 go build
+```
+取消变量
+
+```
+set GOARCH=
+set GOOS=
+```
+显示变量
+
+```
+set GO
+```
