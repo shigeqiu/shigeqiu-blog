@@ -1,6 +1,6 @@
-## Hadoop 权威指南
+# Hadoop 权威指南
 
-### 第Ⅰ部分  Hadoop基础知识
+## 第Ⅰ部分  Hadoop基础知识
 
 - 第1章  初识Hadoop
 - 第2章  关于MapReduce
@@ -8,19 +8,19 @@
 - 第4章  关于YARN
 - 第5章  Hadoop的I/O操作
 
-### 第Ⅱ部分  关于MapReduce
+## 第Ⅱ部分  关于MapReduce
 
 - 第6章  MapReduce应用开发
 - 第7章  MapReduce的工作机制
 - 第8章  MapReduce的类型与格式
 - 第9章  MapReduce的特性
 
-### 第Ⅲ部分  Hadoop的操作
+## 第Ⅲ部分  Hadoop的操作
 
 - 第10章  构建Hadoop集群
 - 第11章  管理Hadoop
 
-### 第Ⅳ部分  Hadoop相关开源项目
+## 第Ⅳ部分  Hadoop相关开源项目
 
 - 第12章  关于Avro
 - 第13章  关于Parquet
@@ -33,7 +33,7 @@
 - 第20章  关于HBase
 - 第21章  关于ZooKeeper
 
-### 第Ⅴ部分  案例学习
+## 第Ⅴ部分  案例学习
 
 - 第22章  医疗公司塞纳(Cerner)的可聚合数据
 - 第23章  生物数据科学：用软件拯救生命
