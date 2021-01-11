@@ -23,6 +23,5 @@
 
 ## 优化
 
-- [3.1 SQL优化 一](3.1_sql优化.md)
-- [3.2 SQL优化 二](3.2_sql优化2.md)
-- [3.3 explain](3.3_explain.md)
+- [3.1 SQL 优化](3.1_sql优化.md)
+- [3.2 explain](3.2_explain.md)
