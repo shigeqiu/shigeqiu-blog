@@ -3,15 +3,16 @@
 <!-- TOC -->
 
 - [Git](#git)
-    - [参考](#参考)
-    - [常用命令](#常用命令)
-    - [追踪关系](#追踪关系)
-    - [git remote](#git-remote)
-    - [Git中全局忽略.DS_Store文件](#git中全局忽略ds_store文件)
-        - [一、 前言 :](#一-前言-)
-        - [二、 .gitignore文件用于忽略文件,其规范如下](#二-gitignore文件用于忽略文件其规范如下)
-        - [三、glob模式要点:](#三glob模式要点)
-        - [四、全局配置](#四全局配置)
+  - [参考](#参考)
+  - [常用命令](#常用命令)
+  - [追踪关系](#追踪关系)
+  - [更新远程分支列表](#更新远程分支列表)
+  - [git remote](#git-remote)
+  - [Git中全局忽略.DS_Store文件](#git中全局忽略ds_store文件)
+    - [一、 前言 :](#一-前言-)
+    - [二、 .gitignore文件用于忽略文件,其规范如下](#二-gitignore文件用于忽略文件其规范如下)
+    - [三、glob模式要点:](#三glob模式要点)
+    - [四、全局配置](#四全局配置)
 
 <!-- /TOC -->
 
@@ -87,6 +88,13 @@ $ git branch --set-upstream-to=origin/20160825_gmmc 20160825_gmmc
  
 ```
 git branch -vv
+```
+
+## 更新远程分支列表
+
+有时会遇到git branch -a时总是不出现新的分支或者远程已经没有的分支在本地还有，这时就需要更新下本地的git分支保持和远程分支一致，使用下面命令即可：
+```
+git remote update origin --prune
 ```
 
 ## git remote
