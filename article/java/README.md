@@ -67,5 +67,6 @@
 
 ## java 8 新特性
 
+- [分组](7_java8/分组.md)
 - Stream
 - Function
