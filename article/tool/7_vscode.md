@@ -15,13 +15,12 @@
 
 - `ctrl+K` `ctrl+S` 快捷键说明
 - `ctrl+K` `ctrl+R` 打开快捷键说明
-
-
+- `Alt + shift + F` 代码格式化
 - `Ctrl+Shift+P` 显示所有命令
 - `Ctrl+P` 转到文件
 - `Ctrl+Shift+F` 在文件中查找
 - `F5` 调试
-- `Ctrl+` ` 切换终端
+- `Ctrl+ ` ` 切换终端
 - `Ctrl+Shift+k` 删除一整行
 - `Alt+Shift+上下` 复制整行
 - `Alt+上下` 调换上下行位置
