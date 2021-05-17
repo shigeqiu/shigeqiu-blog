@@ -1,9 +1,9 @@
 # Golang
 
-- [基础语法](base.md)
-- [包管理](gomod.md)
-- [web](web.md)
-- [后台启动](后台启动)
+- [1. 基础语法](1_base.md)
+- [2. 包管理](2_gomod.md)
+- [3. web](3_web.md)
+- [4. 后台启动](4_后台启动.md)
 
 ## go test 
 

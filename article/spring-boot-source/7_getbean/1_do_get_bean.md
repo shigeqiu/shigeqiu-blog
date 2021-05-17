@@ -8,12 +8,12 @@ Return an instance, which may be shared or independent, of the specified bean.
 <!-- TOC -->
 
 - [doGetBean](#dogetbean)
-    - [位置](#位置)
-    - [参数返回值](#参数返回值)
-    - [方法体](#方法体)
-        - [缓存命中](#缓存命中)
-        - [缓存未命中](#缓存未命中)
-        - [检查requiredType](#检查requiredtype)
+  - [位置](#位置)
+  - [参数返回值](#参数返回值)
+  - [方法体](#方法体)
+    - [缓存命中](#缓存命中)
+    - [缓存未命中](#缓存未命中)
+    - [检查requiredType](#检查requiredtype)
 
 <!-- /TOC -->
 
@@ -147,8 +147,8 @@ checkMergedBeanDefinition(mbd, beanName, args);
 AbstractBeanFactory | `Map<String, RootBeanDefinition>` | mergedBeanDefinitions
 DefaultListableBeanFactory | `Map<String, BeanDefinition>` | beanDefinitionMap
 
-Check the given merged bean definition, potentially throwing validation exceptions.  
-检查给定的合并bean定义，可能引发验证异常。
+> Check the given merged bean definition, potentially throwing validation exceptions.  
+> 检查给定的合并bean定义，可能引发验证异常。
 
 ``` java
 // Guarantee initialization of beans that the current bean depends on.
@@ -171,10 +171,13 @@ if (dependsOn != null) {
 }
 ```
 
-Guarantee initialization of beans that the current bean depends on.保证当前bean依赖的bean初始化。
+> Guarantee initialization of beans that the current bean depends on.  
+> 保证当前bean依赖的bean初始化。
 
-Create bean instance. 创建bean实例
+> Create bean instance.   
+> 创建bean实例
 
 ### 检查requiredType
 
-Check if required type matches the type of the actual bean instance. 检查 **所需类型 (requiredType)** 是否与实际bean实例的类型匹配。
+> Check if required type matches the type of the actual bean instance.  
+> 检查 **所需类型 (requiredType)** 是否与实际bean实例的类型匹配。
