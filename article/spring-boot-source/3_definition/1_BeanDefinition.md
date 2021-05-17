@@ -81,8 +81,8 @@ private Object source;
 
 以下常量的修饰符均为**public static final** **↓↓↓**
 
- 类型  | 变量名 | 默认值
----|---|---|---
+  类型  | 变量名 | 默认值 
+---|---|---
 | String | SCOPE_DEFAULT | `""` |  
 | int | AUTOWIRE_NO | AutowireCapableBeanFactory.AUTOWIRE_NO   
 | int | AUTOWIRE_BY_NAME | AutowireCapableBeanFactory.AUTOWIRE_BY_NAME   
