@@ -41,3 +41,18 @@ CycleGAN是一个由成对图像训练成的神经网络，可以实现图像风
 ## 统计图表
 
 - Matplotlib
+
+## OCR
+
+
+python读取视频字幕功能，结合百度ai图片文字识别，opencv-python  
+https://blog.csdn.net/li_ji_an/article/details/103124652
+
+自己写一个视频字幕提取工具  
+https://juejin.cn/post/6922726297080692744#heading-13  
+
+文字识别库pytesseract初体验  
+https://juejin.cn/post/6844903568667852814
+
+Python识别图片中的文字  
+https://juejin.cn/post/6964376176261333006
