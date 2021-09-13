@@ -3,25 +3,26 @@
 <!-- TOC -->
 
 - [invokeBeanFactoryPostProcessors方法](#invokebeanfactorypostprocessors方法)
-    - [第一阶段](#第一阶段)
-    - [First](#first)
-    - [Next](#next)
-    - [Finally](#finally)
-    - [end](#end)
-    - [4步操作](#4步操作)
-    - [第二阶段](#第二阶段)
-    - [First](#first-1)
-    - [Next](#next-1)
-    - [Finally](#finally-1)
-    - [end](#end-1)
-    - [顺序](#顺序)
-    - [总结](#总结)
-        - [第一阶段](#第一阶段-1)
-        - [第二阶段](#第二阶段-1)
-    - [](#)
+  - [第一阶段](#第一阶段)
+  - [First](#first)
+  - [Next](#next)
+  - [Finally](#finally)
+  - [end](#end)
+  - [4步操作](#4步操作)
+  - [第二阶段](#第二阶段)
+  - [First](#first-1)
+  - [Next](#next-1)
+  - [Finally](#finally-1)
+  - [end](#end-1)
+  - [顺序](#顺序)
+  - [总结](#总结)
+    - [第一阶段](#第一阶段-1)
+    - [第二阶段](#第二阶段-1)
 
 <!-- /TOC -->
 
+
+![a](img/WX20210914-025645.png)
 
 
 
@@ -193,7 +194,11 @@ beanFactory.clearMetadataCache();
 
 
 
-首先主要处理`BeanDefinitionRegistryPostProcessor.class`接口类型，并每一步都调用了该接口下的唯一方法。对于`BeanDefinitionRegistryPostProcessor.class`类型的处理源头，优先处理参数，其次处理从BeanFactory获取的对象。
+首先主要处理`BeanDefinitionRegistryPostProcessor.class`接口类型，并每一步都调用了该接口下的唯一方法 `postProcessBeanDefinitionRegistry()`。
+
+`BeanDefinitionRegistryPostProcessor.class`类型的对象，从参数里获取，然后执行方法 `postProcessBeanDefinitionRegistry()`。
+
+`BeanDefinitionRegistryPostProcessor.class`类型的对象，从BeanFactory获取。
 
 其次由于`BeanDefinitionRegistryPostProcessor.class`是`BeanFactoryPostProcessor.class`的子接口，所以会在 end步 循环调用`BeanFactoryPostProcessor.class`下的唯一方法，结束。而对于`BeanFactoryPostProcessor.class`的处理顺序是优先处理属于`BeanDefinitionRegistryPostProcessor.class`，其次再处理参数。
 
