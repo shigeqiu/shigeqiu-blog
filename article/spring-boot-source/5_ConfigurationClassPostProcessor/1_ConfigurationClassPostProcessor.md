@@ -3,9 +3,9 @@
 <!-- TOC -->
 
 - [ConfigurationClassPostProcessor](#configurationclasspostprocessor)
-  - [内置对象](#%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1)
-  - [对比reader和parser](#%E5%AF%B9%E6%AF%94reader%E5%92%8Cparser)
-  - [processConfigBeanDefinitions方法](#processconfigbeandefinitions%E6%96%B9%E6%B3%95)
+  - [内置对象](#内置对象)
+  - [对比reader和parser](#对比reader和parser)
+  - [processConfigBeanDefinitions方法](#processconfigbeandefinitions方法)
 
 <!-- /TOC -->
 

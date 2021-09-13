@@ -23,25 +23,33 @@
 - [1. invokeBeanFactoryPostProcessors方法](4_PostProcessorRegistrationDelegate/1_invokeBeanFactoryPostProcessors方法.md)
 - [2. registerBeanPostProcessors方法](4_PostProcessorRegistrationDelegate/2_registerBeanPostProcessors方法.md)
 
+
+
+## BeanFactory Post Processor
+
+- [1. BeanFactoryPostProcessor](BeanFactoryPostProcessor/1_BeanFactoryPostProcessor.md)
+- ConfigurationClassPostProcessor
+  - [1. ConfigurationClassPostProcessor](5_ConfigurationClassPostProcessor/1_ConfigurationClassPostProcessor.md)
+  - [2. ConfigurationClassParser](5_ConfigurationClassPostProcessor/2_ConfigurationClassParser.md)
+  - [3. ConfigurationClassBeanDefinitionReader](5_ConfigurationClassPostProcessor/3_ConfigurationClassBeanDefinitionReader.md)
+  - [4. ConfigurationClass](5_ConfigurationClassPostProcessor/4_ConfigurationClass.md)
+  - [5. ConfigurationClassUtils](5_ConfigurationClassPostProcessor/5_ConfigurationClassUtils.md)
+
+
+
+## Bean Post Processor
+
+- [1. BeanPostProcessor](6_post-processor/1_BeanPostProcessor.md)
+- [2. ConditionEvaluator](6_post-processor/2_ConditionEvaluator.md)
+
+
 ## Definition
 
 - [1. BeanDefinition](3_definition/1_BeanDefinition.md)
 - [2. BeanDefinitionRegistry](3_definition/2_BeanDefinitionRegistry.md)
 - [3. BeanMetadataElement](3_definition/3_BeanMetadataElement.md)
 
-## Post Processor
 
-- [1. BeanFactoryPostProcessor](6_post-processor/1_BeanFactoryPostProcessor.md)
-- [2. BeanPostProcessor](6_post-processor/2_BeanPostProcessor.md)
-- [3. ConditionEvaluator](6_post-processor/3_ConditionEvaluator.md)
-
-## ConfigurationClassPostProcessor
-
-- [1. ConfigurationClassPostProcessor](5_ConfigurationClassPostProcessor/1_ConfigurationClassPostProcessor.md)
-- [2. ConfigurationClassParser](5_ConfigurationClassPostProcessor/2_ConfigurationClassParser.md)
-- [3. ConfigurationClassBeanDefinitionReader](5_ConfigurationClassPostProcessor/3_ConfigurationClassBeanDefinitionReader.md)
-- [4. ConfigurationClass](5_ConfigurationClassPostProcessor/4_ConfigurationClass.md)
-- [5. ConfigurationClassUtils](5_ConfigurationClassPostProcessor/5_ConfigurationClassUtils.md)
 
 ## GetBean
 
