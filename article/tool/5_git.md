@@ -10,9 +10,10 @@
   - [git remote](#git-remote)
   - [Git中全局忽略.DS_Store文件](#git中全局忽略ds_store文件)
     - [一、 前言 :](#一-前言-)
-    - [二、 .gitignore文件用于忽略文件,其规范如下](#二-gitignore文件用于忽略文件其规范如下)
+    - [二、gitignore文件用于忽略文件,其规范如下](#二gitignore文件用于忽略文件其规范如下)
     - [三、glob模式要点:](#三glob模式要点)
     - [四、全局配置](#四全局配置)
+  - [依赖树](#依赖树)
 
 <!-- /TOC -->
 
@@ -114,7 +115,7 @@ $ git remote add <主机名> <网址>
 
 简单的说Mac每个目录都会有个文件叫.DS_Store，它是用于存储当前文件夹的一些Meta信息。所以每次查看Git目录的状态，如果没有add这个.DS_Store文件，会有Untracked files:的提示，add了它，又会常有Changes not staged for commit:的提示，是不是像个苍蝇一样特别烦？要解决这个烦人的小妖精，我们需要用到.gitignore文件去配置Git目录中需要忽略的文件。
 
-###  二、 .gitignore文件用于忽略文件,其规范如下
+###  二、gitignore文件用于忽略文件,其规范如下
 
 - 1.所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。
 - 2.可以使用标准的 glob 模式匹配。
@@ -151,3 +152,41 @@ excludesfile = /Users/reon/.gitignore_global
 配置成功，可以去验证是否生效了
 ```
 到这里，忽略文件的操作已经搞定了.
+
+## 依赖树
+
+
+**用法**
+
+用cmd命令在控制台切换到pom文件所在的目录，执行如下语句，在pom目录下打开 `jar包依赖关系.txt` 文件查看依赖关系。
+
+```
+mvn dependency:tree -Doutput=jar包依赖关系.txt
+```
+
+
+
+
+**记录**
+
+参考
+
+- 博客： https://www.cnblogs.com/ptqueen/p/7985198.html
+- 官方文档：https://maven.apache.org/plugins/maven-dependency-plugin/tree-mojo.html
+
+`mvn dependency:tree` 参数及其含义：在命令后面按照 `-D参数名=参数值` 格式增加参数
+
+参数意义
+```
+ - appendOutput：是将输出追加到输出文件还是覆盖输出文件，默认值为：false。
+ - excludes，includes：通过逗号分离，格式[groupId]:[artifactId]:[type]:[version]，支持通配符*
+ - outputFile：指定输出文件路径
+ - outputType：指定输出文件格式，默认text，还支持dot,graphml,tgf
+ - verbose：把artifact的每处依赖都详细显示出来，可用来查看冲突和重复的具体情况
+```
+
+maven pom里version是用变量方式写的，deploy时怎么变成实际的值
+
+**备注**
+
+`mvn dependency:tree` 指令先从本地仓库进行查找，如果找不到才会到远程仓库进行查找，并下载到本地仓库。
