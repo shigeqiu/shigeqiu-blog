@@ -68,5 +68,6 @@
 ## java 8 新特性
 
 - [分组](7_java8/分组.md)
+- [java8 函数的写法](7_java8/java8函数的写法.md)
 - Stream
 - Function
