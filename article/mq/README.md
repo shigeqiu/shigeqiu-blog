@@ -1,9 +1,16 @@
 # MQ
 
-- [1.1 Kafka](1.1_kafka.md)
-- [1.2 RabbitMQ 安装](1.2_rabbit安装.md)
-- [1.3 RabbitMQ 交换器](1.3_rabbit交换器.md)
-- [1.4 Spring Boot集成](1.4_springboot集成.md)
+## Kafka
+
+- [1.1 Kafka 介绍](1_kafka/1_kafka介绍.md)
+
+## RabbitMQ
+
+- [1 RabbitMQ 安装](2_rabbitmq/1_rabbit安装.md)
+- [2 RabbitMQ 交换器](2_rabbitmq/2_rabbit交换器.md)
+
+## 其他
+
 - [1.5 延迟队列](1.5_延迟队列.md)
 - rabbit延迟队列
 - rabbit死信
