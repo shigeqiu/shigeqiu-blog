@@ -2,7 +2,7 @@
 
 <!-- TOC -->
 
-- [RabbitMQ 交换器](#rabbitmq-%e4%ba%a4%e6%8d%a2%e5%99%a8)
+- [RabbitMQ 交换器](#rabbitmq-交换器)
   - [direct](#direct)
   - [fanout](#fanout)
   - [topic](#topic)

@@ -2,7 +2,10 @@
 
 ## Kafka
 
-- [1.1 Kafka 介绍](1_kafka/1_kafka介绍.md)
+- [1 Kafka 介绍](1_kafka/1_kafka介绍.md)
+- [2 主题和分区](1_kafka/2_主题和分区.md)
+- [3 生产者和消费者](1_kafka/3_生产者和消费者.md)
+- [4 broker和集群](1_kafka/4_broker和集群.md)
 
 ## RabbitMQ
 
