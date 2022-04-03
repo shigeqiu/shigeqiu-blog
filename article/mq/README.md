@@ -7,6 +7,8 @@
 - [3 生产者和消费者](1_kafka/3_生产者和消费者.md)
 - [4 broker和集群](1_kafka/4_broker和集群.md)
 - [5 生产者](1_kafka/5_生产者.md)
+- [6 消费者](1_kafka/6_消费者.md)
+- [7 处理请求](1_kafka/7_处理请求.md)
 
 ## RabbitMQ
 
