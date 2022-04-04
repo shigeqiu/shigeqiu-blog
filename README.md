@@ -10,6 +10,7 @@
 - [MySQL](article/mysql/README.md) | [Redis](article/redis/README.md) | [MongoDB](article/mongodb/README.md) ｜ [Elasticsearch](article/elasticsearch/README.md)
 - [Linux](article/linux/README.md) | [Nginx](article/nginx/README.md)
 - [MQ](article/mq/README.md)
+- [ZooKeeper](article/zookeeper/README.md)
 - [Reading](article/reading/README.md)
 - [Algorithm](article/algorithm/README.md)
 - [API Gateway](article/gateway/README.md)

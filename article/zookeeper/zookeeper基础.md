@@ -1,19 +1,19 @@
-# ZooKeeper
+# ZooKeeper基础
 
 <!-- TOC -->
 
-- [ZooKeeper](#zookeeper)
-    - [官方文档](#官方文档)
-    - [安装](#安装)
-    - [配置](#配置)
-    - [zkServer](#zkserver)
-    - [图形化客户端工具](#图形化客户端工具)
-    - [znode](#znode)
-        - [持久节点 persistent Nodes](#持久节点-persistent-nodes)
-        - [短暂节点 Ephemeral Nodes](#短暂节点-ephemeral-nodes)
-        - [顺序号 Sequence Nodes -- Unique Naming](#顺序号-sequence-nodes----unique-naming)
-        - [观察 Watches](#观察-watches)
-    - [应用](#应用)
+- [ZooKeeper基础](#zookeeper基础)
+  - [官方文档](#官方文档)
+  - [安装](#安装)
+  - [配置](#配置)
+  - [zkServer](#zkserver)
+  - [图形化客户端工具](#图形化客户端工具)
+  - [znode](#znode)
+    - [持久节点 persistent Nodes](#持久节点-persistent-nodes)
+    - [短暂节点 Ephemeral Nodes](#短暂节点-ephemeral-nodes)
+    - [顺序号 Sequence Nodes -- Unique Naming](#顺序号-sequence-nodes----unique-naming)
+    - [观察 Watches](#观察-watches)
+  - [应用](#应用)
 
 <!-- /TOC -->
 
