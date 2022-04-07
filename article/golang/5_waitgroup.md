@@ -60,10 +60,40 @@ WaitGroup在需要等待多个任务结束再返回的业务来说还是很有�
 ## wait时如何实现超时
 
 ``` go
-wg := &sync.WaigGroup{}
-select {
-case <-wg.Wait():
-// All done!
-case <-time.After(500 * time.Millisecond):
-// Hit timeout.
+package main
+
+import (
+    "fmt"
+    "sync"
+    "time"
+)
+
+func main() {
+    wg := sync.WaitGroup{}
+    wg.Add(1)
+
+    done := make(chan struct{})
+
+    go func() {
+        wg.Wait()
+        done <- struct{}{}
+    }()
+
+    go func() {
+        time.Sleep(5 * time.Second)
+        wg.Done()
+    }()
+
+    timeout := time.Duration(10) * time.Second
+    fmt.Printf("Wait for waitgroup (up to %s)\n", timeout)
+
+    select {
+    case <-done:
+        fmt.Printf("Wait group finished\n")
+    case <-time.After(timeout):
+        fmt.Printf("Timed out waiting for wait group\n")
+    }
+
+    fmt.Printf("Free at last\n")
+}
 ```
