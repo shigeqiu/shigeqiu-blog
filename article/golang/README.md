@@ -4,6 +4,7 @@
 - [2. 包管理](2_gomod.md)
 - [3. web](3_web.md)
 - [4. 后台启动](4_后台启动.md)
+- [5. WaitGroup](5_waitgroup.md)
 
 ## go test 
 
