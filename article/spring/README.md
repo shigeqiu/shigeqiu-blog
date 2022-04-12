@@ -5,7 +5,7 @@
 - [1 官网浏览指南](spring/1_官网浏览指南.md)
 - [2 初始化与销毁Bean](spring/2_初始化与销毁Bean.md)
 - [3 mvc工作流程](spring/3_mvc工作流程.md)
-- [4 注释](spring/4_注释.md)
+- [4 注解](spring/4_注解.md)
 - [5 aop](spring/5_aop.md)
 - [6 参数校验](spring/6_参数校验.md)
 - [7 Spring Bean生命周期](spring/7_springbean生命周期.md)
