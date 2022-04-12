@@ -1,16 +1,16 @@
 # Spring
 
-## 基础知识
+## Spring 基础
 
-- [1 官网浏览指南](基础/1_官网浏览指南.md)
-- [2 初始化与销毁Bean](基础/2_初始化与销毁Bean.md)
-- [3 mvc工作流程](基础/3_mvc工作流程.md)
-- [4 注释](基础/4_注释.md)
-- [5 aop](基础/5_aop.md)
-- [6 参数校验](基础/6_参数校验.md)
-- [7 Spring Bean生命周期](基础/7_springbean生命周期.md)
-- [8 事务的传播属性](基础/8_事务的传播属性.md)
-- [9 内嵌事务的测试](基础/9_内嵌事务的测试.md)
+- [1 官网浏览指南](spring/1_官网浏览指南.md)
+- [2 初始化与销毁Bean](spring/2_初始化与销毁Bean.md)
+- [3 mvc工作流程](spring/3_mvc工作流程.md)
+- [4 注释](spring/4_注释.md)
+- [5 aop](spring/5_aop.md)
+- [6 参数校验](spring/6_参数校验.md)
+- [7 Spring Bean生命周期](spring/7_springbean生命周期.md)
+- [8 事务的传播属性](spring/8_事务的传播属性.md)
+- [9 内嵌事务的测试](spring/9_内嵌事务的测试.md)
 
 ## Spring Boot
 
