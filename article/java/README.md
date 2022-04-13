@@ -42,7 +42,7 @@
 - [4 Synchronized和Static Synchronized区别](4_thread/4_Synchronized和StaticSynchronized区别.md)
 - [5 Monitor机制](4_thread/5_monitor.md)
 - [6 线程池](4_thread/6_线程池.md)
-- [7 应用示例之输出ABC.md](4_thread/7_应用示例-输出ABC.md)
+- [7 应用示例输出ABC](4_thread/7_应用示例输出ABC.md)
 
 ## AQS 机制
 
