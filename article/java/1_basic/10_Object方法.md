@@ -1,5 +1,10 @@
 # Object方法
 
+- [Object方法](#object方法)
+  - [notify和wait](#notify和wait)
+    - [notify 和 notifyAll的区别](#notify-和-notifyall的区别)
+  - [clone和finalize](#clone和finalize)
+
 ``` java
 public class Object {
     public final native Class<?> getClass();
