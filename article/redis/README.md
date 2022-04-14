@@ -16,6 +16,9 @@ redis 线程模型
 
 protobuf 定长/变长 问题
 
+
+redis 集群和单机版的redis 有哪些区别，有哪些命令在集群上不可用
+
 ## Redis 集群
 
 目前主流的Redis集群解决方案有三类，它们都是通过将key分散到不同的redis实例上来提高整体能力, 这种方法称为分片(sharding):
