@@ -11,6 +11,7 @@
 - [1.7 `tar` 命令](1.7_tar命令.md)
 - [1.8 `du` 和 `df`](1.8_du和df.md)
 - [1.9 `which` 与 `whereis`](1.9_which_whereis.md)
+- [1.10 centos7 连接 wifi](1.10_centos7连接wifi.md)
 
 ## 用户
 
